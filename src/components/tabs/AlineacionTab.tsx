@@ -50,7 +50,13 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
           .select('*')
           .order('dorsal', { ascending: true });
         
-        if (playersError) throw playersError;
+        if (playersError) {
+          if (playersError.code === '42P01') {
+             console.warn('Tabla jugadores no existe.');
+          } else {
+             throw playersError;
+          }
+        }
         setPlantilla(playersData || []);
 
         // 2. Fetch Alineacion
@@ -89,8 +95,9 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
         }
 
       } catch (err: any) {
-        console.error(err);
-        showToast('Error cargando datos: ' + err.message, 'error');
+        console.warn('Error en fetchDatos:', err);
+        const errorMsg = err?.message || err?.toString() || 'Error desconocido';
+        showToast('Error cargando datos: ' + errorMsg, 'error');
       } finally {
         setLoading(false);
       }
@@ -129,8 +136,9 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
       
       showToast('Alineación guardada correctamente', 'success');
     } catch (err: any) {
-      console.error(err);
-      showToast('Error al guardar: ' + err.message, 'error');
+      console.warn('Error al guardar:', err);
+      const errorMsg = err?.message || err?.toString() || 'Error desconocido';
+      showToast('Error al guardar: ' + errorMsg, 'error');
     } finally {
       setSaving(false);
     }

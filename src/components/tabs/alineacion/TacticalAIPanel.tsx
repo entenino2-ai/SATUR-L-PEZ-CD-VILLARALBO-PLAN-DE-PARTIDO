@@ -40,8 +40,8 @@ export default function TacticalAIPanel({
       const data = await res.json();
       setContent(data.analysis);
     } catch (err: any) {
-      console.error(err);
-      alert('Hubo un error al conectar con Gemini: ' + err.message);
+      console.warn('Error en TacticalAIPanel:', err);
+      alert('Hubo un error al conectar con Gemini: ' + (err?.message || err?.toString() || 'Ha ocurrido un error inesperado'));
     } finally {
       setLoading(false);
     }
