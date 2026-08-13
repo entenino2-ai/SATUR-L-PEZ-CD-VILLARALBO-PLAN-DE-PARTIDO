@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { Plus, Calendar, MapPin, Trash2, Shield, Loader2, ArrowRight, X } from 'lucide-react';
+import { Plus, Calendar, MapPin, Trash2, Shield, Loader2, ArrowRight, X, Pencil } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { Partido, Equipo } from '../lib/types';
 
@@ -14,6 +14,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
   const [partidos, setPartidos] = useState<Partido[]>([]);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingPartidoId, setEditingPartidoId] = useState<string | null>(null);
 
   // Form states
   const [equipoLocalId, setEquipoLocalId] = useState('');
@@ -51,8 +52,9 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
     fetchPartidos();
   }, [fetchPartidos]);
 
-  // Set default Villaralbo local team if exists
+  // Set default Villaralbo local team if exists (only for new matches)
   useEffect(() => {
+    if (editingPartidoId) return;
     const cdVillaralbo = teams.find(t => t.nombre.toLowerCase().includes('villaralbo'));
     if (cdVillaralbo) {
       setEquipoLocalId(cdVillaralbo.id);
@@ -63,7 +65,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
       const otherTeam = teams.find(t => !t.nombre.toLowerCase().includes('villaralbo')) || teams[1];
       setEquipoVisitanteId(otherTeam.id);
     }
-  }, [teams]);
+  }, [teams, editingPartidoId]);
 
   const handleCreatePartido = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -80,39 +82,58 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
       setSubmitting(true);
       setErrorMsg('');
 
-      const { data, error } = await supabase
-        .from('partidos')
-        .insert([
-          {
+      if (editingPartidoId) {
+        // Update existing match
+        const { error } = await supabase
+          .from('partidos')
+          .update({
             equipo_local_id: equipoLocalId,
             equipo_visitante_id: equipoVisitanteId,
             fecha: new Date(fecha).toISOString(),
             lugar: lugar || null,
             tipo,
             estado
-          }
-        ])
-        .select();
+          })
+          .eq('id', editingPartidoId);
 
-      if (error) throw error;
+        if (error) throw error;
+      } else {
+        // Create new match
+        const { data, error } = await supabase
+          .from('partidos')
+          .insert([
+            {
+              equipo_local_id: equipoLocalId,
+              equipo_visitante_id: equipoVisitanteId,
+              fecha: new Date(fecha).toISOString(),
+              lugar: lugar || null,
+              tipo,
+              estado
+            }
+          ])
+          .select();
 
-      // Seed default record in informes_rival and planes_partido for the created match
-      if (data && data[0]) {
-        const matchId = data[0].id;
-        await Promise.all([
-          supabase.from('informes_rival').insert([{ partido_id: matchId, caracteristicas: {} }]),
-          supabase.from('planes_partido').insert([{ partido_id: matchId }])
-        ]);
+        if (error) throw error;
+
+        // Seed default record in informes_rival and planes_partido for the created match
+        if (data && data[0]) {
+          const matchId = data[0].id;
+          await Promise.all([
+            supabase.from('informes_rival').insert([{ partido_id: matchId, caracteristicas: {} }]),
+            supabase.from('planes_partido').insert([{ partido_id: matchId }])
+          ]);
+        }
       }
 
       setIsModalOpen(false);
+      setEditingPartidoId(null);
       // Reset form
       setLugar('');
       setFecha('');
       fetchPartidos();
     } catch (err: any) {
-      console.error('Error creating partido:', err);
-      setErrorMsg(err.message || 'Error al crear el partido');
+      console.error('Error saving partido:', err);
+      setErrorMsg(err.message || 'Error al guardar el partido');
     } finally {
       setSubmitting(false);
     }
@@ -131,6 +152,21 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
       console.error('Error deleting partido:', err);
       alert('Error al eliminar partido: ' + err.message);
     }
+  };
+
+  const handleEditClick = (partido: Partido, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setEditingPartidoId(partido.id);
+    setEquipoLocalId(partido.equipo_local_id);
+    setEquipoVisitanteId(partido.equipo_visitante_id);
+    // Convert to datetime-local format YYYY-MM-DDThh:mm
+    const d = new Date(partido.fecha);
+    const formattedDate = new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
+    setFecha(formattedDate);
+    setLugar(partido.lugar || '');
+    setTipo(partido.tipo);
+    setEstado(partido.estado);
+    setIsModalOpen(true);
   };
 
   const formatDate = (dateStr: string) => {
@@ -169,7 +205,14 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
         </div>
 
         <button
-          onClick={() => setIsModalOpen(true)}
+          onClick={() => {
+            setEditingPartidoId(null);
+            setLugar('');
+            setFecha('');
+            setTipo('Liga');
+            setEstado('Programado');
+            setIsModalOpen(true);
+          }}
           className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary-purple/95 hover:to-primary-red/95 transition-all duration-200 cursor-pointer"
         >
           <Plus className="h-4 w-4" />
@@ -216,12 +259,20 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                     {partido.tipo}
                   </span>
 
-                  <button
-                    onClick={(e) => handleDeletePartido(partido.id, e)}
-                    className="rounded-lg p-1.5 text-slate-400 hover:bg-rose-50 hover:text-primary-red dark:hover:bg-rose-950/20 transition-colors"
-                  >
-                    <Trash2 className="h-4 w-4" />
-                  </button>
+                  <div className="flex gap-1">
+                    <button
+                      onClick={(e) => handleEditClick(partido, e)}
+                      className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-primary-purple dark:hover:bg-slate-800 transition-colors"
+                    >
+                      <Pencil className="h-4 w-4" />
+                    </button>
+                    <button
+                      onClick={(e) => handleDeletePartido(partido.id, e)}
+                      className="rounded-lg p-1.5 text-slate-400 hover:bg-rose-50 hover:text-primary-red dark:hover:bg-rose-950/20 transition-colors"
+                    >
+                      <Trash2 className="h-4 w-4" />
+                    </button>
+                  </div>
                 </div>
 
                 {/* Enfrentamiento visual (Logos + VS) */}
@@ -300,7 +351,9 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
           <div className="relative z-10 w-full max-w-lg overflow-hidden rounded-2xl border border-border bg-card text-foreground shadow-2xl animate-in zoom-in-95 duration-200">
             {/* Modal Header */}
             <div className="flex h-16 items-center justify-between border-b border-border px-6">
-              <h3 className="text-base font-black tracking-tight uppercase">Programar Nuevo Partido</h3>
+              <h3 className="text-base font-black tracking-tight uppercase">
+                {editingPartidoId ? 'Modificar Partido' : 'Programar Nuevo Partido'}
+              </h3>
               <button
                 onClick={() => setIsModalOpen(false)}
                 className="flex h-8 w-8 items-center justify-center rounded-lg border border-border hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
