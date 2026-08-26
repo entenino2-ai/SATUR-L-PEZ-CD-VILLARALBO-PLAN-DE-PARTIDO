@@ -189,7 +189,7 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
   if (loading) {
     return (
       <div className="flex h-64 flex-col items-center justify-center gap-3">
-        <Loader2 className="h-8 w-8 animate-spin text-primary-purple" />
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
         <p className="text-xs font-bold text-muted-text">Cargando plantilla y alineación...</p>
       </div>
     );
@@ -213,7 +213,7 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
                     key={f}
                     onClick={() => setFormacionLocal(f)}
                     className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all ${
-                      formacionLocal === f ? 'bg-primary-red text-white shadow-sm' : 'text-slate-500 hover:text-foreground'
+                      formacionLocal === f ? 'bg-primary-blue text-white shadow-sm' : 'text-slate-500 hover:text-foreground'
                     }`}
                   >
                     {f}
@@ -263,7 +263,7 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
 
         {/* Legend */}
         <div className="flex items-center gap-4 px-2 text-[10px] font-bold">
-          <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full bg-primary-red"></div> CD Villaralbo ({formacionLocal})</div>
+          <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full bg-primary-blue"></div> CD Villaralbo ({formacionLocal})</div>
           {mostrarRival && <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full bg-primary-blue opacity-80"></div> Rival ({formacionRival})</div>}
         </div>
 
@@ -337,7 +337,7 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
         <button
           onClick={handleSave}
           disabled={saving}
-          className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-4 py-3 text-xs font-bold text-white shadow-md hover:opacity-95 disabled:opacity-50 transition-all cursor-pointer mt-auto"
+          className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary to-primary-blue px-4 py-3 text-xs font-bold text-white shadow-md hover:opacity-95 disabled:opacity-50 transition-all cursor-pointer mt-auto"
         >
           {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
           Guardar Alineación

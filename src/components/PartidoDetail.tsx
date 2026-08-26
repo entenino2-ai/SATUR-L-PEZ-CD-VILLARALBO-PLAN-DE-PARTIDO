@@ -95,7 +95,7 @@ export default function PartidoDetail({ partido, onBack, showToast }: PartidoDet
               // eslint-disable-next-line @next/next/no-img-element
               <img src={local.escudo_url} alt={local.nombre} className="h-full w-full object-contain" />
             ) : (
-              <div className="flex h-full w-full items-center justify-center bg-gradient-to-tr from-primary-purple/10 to-primary-red/10 rounded-lg text-primary-purple font-black text-[10px]">
+              <div className="flex h-full w-full items-center justify-center bg-gradient-to-tr from-primary/10 to-primary-blue/10 rounded-lg text-primary font-black text-[10px]">
                 {getInitials(local.nombre)}
               </div>
             )}
@@ -107,7 +107,7 @@ export default function PartidoDetail({ partido, onBack, showToast }: PartidoDet
               // eslint-disable-next-line @next/next/no-img-element
               <img src={visitante.escudo_url} alt={visitante.nombre} className="h-full w-full object-contain" />
             ) : (
-              <div className="flex h-full w-full items-center justify-center bg-gradient-to-tr from-primary-purple/10 to-primary-red/10 rounded-lg text-primary-purple font-black text-[10px]">
+              <div className="flex h-full w-full items-center justify-center bg-gradient-to-tr from-primary/10 to-primary-blue/10 rounded-lg text-primary font-black text-[10px]">
                 {getInitials(visitante.nombre)}
               </div>
             )}
@@ -123,7 +123,7 @@ export default function PartidoDetail({ partido, onBack, showToast }: PartidoDet
             onClick={() => setActiveTab(tab.id)}
             className={`rounded-lg px-4 py-2.5 text-xs font-black uppercase tracking-wider transition-all duration-150 cursor-pointer ${
               activeTab === tab.id
-                ? 'bg-primary-purple text-white shadow-sm'
+                ? 'bg-primary text-white shadow-sm'
                 : 'text-muted-text hover:text-foreground'
             }`}
           >

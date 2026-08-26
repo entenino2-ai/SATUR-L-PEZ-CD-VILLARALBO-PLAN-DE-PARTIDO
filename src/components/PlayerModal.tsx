@@ -147,7 +147,7 @@ export default function PlayerModal({ isOpen, onClose, player, onSave }: PlayerM
       {/* Modal Card */}
       <div className="relative z-10 w-full max-w-lg overflow-hidden rounded-2xl border border-border bg-card text-foreground shadow-2xl transition-all">
         {/* Decorative Top Line */}
-        <div className="h-1.5 w-full bg-gradient-to-r from-primary-purple via-primary-red to-primary-blue" />
+        <div className="h-1.5 w-full bg-gradient-to-r from-primary via-primary-blue to-primary" />
 
         {/* Modal Header */}
         <div className="flex items-center justify-between border-b border-border px-6 py-4">
@@ -165,7 +165,7 @@ export default function PlayerModal({ isOpen, onClose, player, onSave }: PlayerM
         {/* Form Body */}
         <form onSubmit={handleSubmit} className="p-6 space-y-5">
           {error && (
-            <div className="flex items-start gap-2.5 rounded-xl border border-rose-500/20 bg-rose-500/10 p-3.5 text-xs font-bold text-primary-red">
+            <div className="flex items-start gap-2.5 rounded-xl border border-rose-500/20 bg-rose-500/10 p-3.5 text-xs font-bold text-primary-blue">
               <ShieldAlert className="h-4.5 w-4.5 shrink-0" />
               <span>{error}</span>
             </div>
@@ -224,7 +224,7 @@ export default function PlayerModal({ isOpen, onClose, player, onSave }: PlayerM
                 value={nombre}
                 onChange={(e) => setNombre(e.target.value)}
                 disabled={isSaving}
-                className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold outline-none focus:border-primary-purple focus:ring-2 focus:ring-primary-purple/20 transition-all"
+                className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
               />
             </div>
 
@@ -241,7 +241,7 @@ export default function PlayerModal({ isOpen, onClose, player, onSave }: PlayerM
                 value={dorsal}
                 onChange={(e) => setDorsal(e.target.value === '' ? '' : Number(e.target.value))}
                 disabled={isSaving}
-                className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold outline-none focus:border-primary-purple focus:ring-2 focus:ring-primary-purple/20 transition-all"
+                className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
               />
             </div>
 
@@ -254,7 +254,7 @@ export default function PlayerModal({ isOpen, onClose, player, onSave }: PlayerM
                 value={demarcacion}
                 onChange={(e) => setDemarcacion(e.target.value as DemarcacionType)}
                 disabled={isSaving}
-                className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold outline-none focus:border-primary-purple focus:ring-2 focus:ring-primary-purple/20 transition-all"
+                className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
               >
                 {DEMARCACIONES.map((pos) => (
                   <option key={pos} value={pos}>
@@ -276,7 +276,7 @@ export default function PlayerModal({ isOpen, onClose, player, onSave }: PlayerM
                   value={fechaNacimiento}
                   onChange={(e) => setFechaNacimiento(e.target.value)}
                   disabled={isSaving}
-                  className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold outline-none focus:border-primary-purple focus:ring-2 focus:ring-primary-purple/20 transition-all"
+                  className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                 />
               </div>
             </div>
@@ -285,9 +285,9 @@ export default function PlayerModal({ isOpen, onClose, player, onSave }: PlayerM
             <div className="sm:col-span-2 bg-slate-50 dark:bg-slate-900/30 border border-border/60 rounded-2xl p-4">
               <div className="flex items-center justify-between text-xs font-extrabold text-muted-text uppercase mb-2">
                 <span className="flex items-center gap-1">
-                  <Activity className="h-4 w-4 text-primary-red" /> Estado de Forma (%)
+                  <Activity className="h-4 w-4 text-primary-blue" /> Estado de Forma (%)
                 </span>
-                <span className="text-sm text-primary-purple font-black">{forma}%</span>
+                <span className="text-sm text-primary font-black">{forma}%</span>
               </div>
               <input
                 type="range"
@@ -296,7 +296,7 @@ export default function PlayerModal({ isOpen, onClose, player, onSave }: PlayerM
                 value={forma}
                 onChange={(e) => setForma(Number(e.target.value))}
                 disabled={isSaving}
-                className="h-2 w-full cursor-pointer rounded-full bg-slate-200 accent-primary-purple dark:bg-slate-800"
+                className="h-2 w-full cursor-pointer rounded-full bg-slate-200 accent-primary dark:bg-slate-800"
               />
               <div className="flex justify-between text-[10px] font-semibold text-muted-text mt-1.5">
                 <span>0% Lesionado / Inactivo</span>
@@ -318,7 +318,7 @@ export default function PlayerModal({ isOpen, onClose, player, onSave }: PlayerM
             <button
               type="submit"
               disabled={isSaving}
-              className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-6 py-3 text-xs font-bold text-white shadow-md hover:from-primary-purple/95 hover:to-primary-red/95 cursor-pointer disabled:opacity-70"
+              className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary to-primary-blue px-6 py-3 text-xs font-bold text-white shadow-md hover:from-primary/95 hover:to-primary-blue/95 cursor-pointer disabled:opacity-70"
             >
               {isSaving ? (
                 <>

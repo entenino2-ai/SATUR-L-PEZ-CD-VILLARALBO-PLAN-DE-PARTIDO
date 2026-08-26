@@ -50,12 +50,11 @@ export default function Sidebar({
         {/* Header/Brand logo */}
         <div className="flex h-20 items-center justify-between px-6 border-b border-border">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-primary-purple via-primary-red to-primary-blue text-white shadow-md overflow-hidden p-0">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/satur-lopez.png" alt="Satur López" className="h-full w-full object-cover" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-primary to-primary-blue text-white shadow-md overflow-hidden p-0">
+              <Shield className="h-5 w-5 text-white/90" />
             </div>
             <div>
-              <span className="font-sans text-lg font-extrabold tracking-wider bg-gradient-to-r from-primary-purple to-primary-red bg-clip-text text-transparent">
+              <span className="font-sans text-lg font-extrabold tracking-wider bg-gradient-to-r from-primary to-primary-blue bg-clip-text text-transparent">
                 CD VILLARALBO
               </span>
               <p className="text-[10px] font-semibold text-muted-text uppercase tracking-widest">
@@ -86,14 +85,14 @@ export default function Sidebar({
                 }}
                 className={`group flex w-full items-center justify-between rounded-xl px-4 py-3.5 text-sm font-semibold transition-all duration-200 ${
                   isActive
-                    ? 'bg-gradient-to-r from-primary-purple/10 to-primary-red/10 text-primary-purple border-l-4 border-primary-red shadow-sm'
+                    ? 'bg-gradient-to-r from-primary/10 to-primary-blue/10 text-primary border-l-4 border-primary-blue shadow-sm'
                     : 'text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:text-foreground'
                 }`}
               >
                 <div className="flex items-center gap-3">
                   <Icon
                     className={`h-5 w-5 transition-transform duration-300 group-hover:scale-110 ${
-                      isActive ? 'text-primary-red' : 'text-muted-text group-hover:text-foreground'
+                      isActive ? 'text-primary-blue' : 'text-muted-text group-hover:text-foreground'
                     }`}
                   />
                   <span>{item.label}</span>
@@ -102,7 +101,7 @@ export default function Sidebar({
                   <span
                     className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${
                       isActive
-                        ? 'bg-primary-red text-white'
+                        ? 'bg-primary-blue text-white'
                         : item.badge === 'PRO'
                         ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300'
                         : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300'
@@ -122,7 +121,7 @@ export default function Sidebar({
           <div className="flex items-center justify-between rounded-2xl border border-border bg-slate-50/50 p-3.5 dark:bg-slate-900/30">
             <div className="flex items-center gap-2.5">
               {isDarkMode ? (
-                <Moon className="h-4.5 w-4.5 text-primary-purple" />
+                <Moon className="h-4.5 w-4.5 text-primary" />
               ) : (
                 <Sun className="h-4.5 w-4.5 text-amber-500" />
               )}
@@ -132,7 +131,7 @@ export default function Sidebar({
             </div>
             <button
               onClick={toggleDarkMode}
-              className="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-slate-200 transition-colors duration-200 ease-in-out focus:outline-none dark:bg-primary-purple"
+              className="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-slate-200 transition-colors duration-200 ease-in-out focus:outline-none dark:bg-primary"
             >
               <span
                 className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${
@@ -144,7 +143,7 @@ export default function Sidebar({
 
           {/* User Profile Card */}
           <div className="mt-4 flex items-center gap-3 px-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-red/10 text-primary-red font-bold text-sm overflow-hidden">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-blue/10 text-primary-blue font-bold text-sm overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/satur-lopez.png" alt="Satur López" className="h-full w-full object-cover" />
             </div>

@@ -212,7 +212,7 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
   if (loading) {
     return (
       <div className="flex h-64 flex-col items-center justify-center gap-3">
-        <Loader2 className="h-8 w-8 animate-spin text-primary-purple" />
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
         <p className="text-xs font-bold text-muted-text">Cargando pizarra de ABP...</p>
       </div>
     );
@@ -249,7 +249,7 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
         <button
           onClick={handleSave}
           disabled={saving}
-          className="flex items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary-purple/95 hover:to-primary-red/95 transition-all cursor-pointer disabled:opacity-50 mx-auto sm:mx-0 w-full sm:w-auto"
+          className="flex items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-primary to-primary-blue px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary/95 hover:to-primary-blue/95 transition-all cursor-pointer disabled:opacity-50 mx-auto sm:mx-0 w-full sm:w-auto"
         >
           {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
           <span>Guardar ABP ({tipo})</span>
@@ -268,7 +268,7 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
             >
               {/* Corner Header */}
               <div className="border-b border-slate-800 pb-2 flex justify-between items-center">
-                <span className="text-[10px] font-black text-primary-red uppercase tracking-wider">CÓRNERS {tipo.toUpperCase()}</span>
+                <span className="text-[10px] font-black text-primary-blue uppercase tracking-wider">CÓRNERS {tipo.toUpperCase()}</span>
                 <h4 className="text-xs font-black text-slate-300 uppercase">CÓRNER {num}</h4>
               </div>
 
@@ -306,7 +306,7 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
                       className="flex w-full items-center justify-center gap-1.5 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900 px-3 py-2 text-xs font-bold text-slate-350 cursor-pointer transition-all"
                     >
                       {uploading[`${num}_jugada1`] ? (
-                        <Loader2 className="h-3.5 w-3.5 animate-spin text-primary-purple" />
+                        <Loader2 className="h-3.5 w-3.5 animate-spin text-primary" />
                       ) : (
                         <Upload className="h-3.5 w-3.5 text-slate-500" />
                       )}
@@ -321,7 +321,7 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
                   value={corner.jugada1.detail}
                   onChange={(e) => handleFieldChange(num, 'jugada1', 'detail', e.target.value)}
                   placeholder="Detalle imagen 1..."
-                  className="w-full rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-red resize-none transition-all"
+                  className="w-full rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-blue resize-none transition-all"
                 />
 
                 {/* Video URL input */}
@@ -332,7 +332,7 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
                     value={corner.jugada1.video}
                     onChange={(e) => handleFieldChange(num, 'jugada1', 'video', e.target.value)}
                     placeholder="URL Vimeo imagen 1..."
-                    className="w-full rounded-xl border border-slate-800 bg-slate-900/40 py-2.5 pl-9 pr-3 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-red transition-all"
+                    className="w-full rounded-xl border border-slate-800 bg-slate-900/40 py-2.5 pl-9 pr-3 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-blue transition-all"
                   />
                 </div>
               </div>
@@ -371,7 +371,7 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
                       className="flex w-full items-center justify-center gap-1.5 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900 px-3 py-2 text-xs font-bold text-slate-350 cursor-pointer transition-all"
                     >
                       {uploading[`${num}_jugada2`] ? (
-                        <Loader2 className="h-3.5 w-3.5 animate-spin text-primary-purple" />
+                        <Loader2 className="h-3.5 w-3.5 animate-spin text-primary" />
                       ) : (
                         <Upload className="h-3.5 w-3.5 text-slate-500" />
                       )}
@@ -386,7 +386,7 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
                   value={corner.jugada2.detail}
                   onChange={(e) => handleFieldChange(num, 'jugada2', 'detail', e.target.value)}
                   placeholder="Detalle imagen 2..."
-                  className="w-full rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-red resize-none transition-all"
+                  className="w-full rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-blue resize-none transition-all"
                 />
 
                 {/* Video URL input */}
@@ -397,7 +397,7 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
                     value={corner.jugada2.video}
                     onChange={(e) => handleFieldChange(num, 'jugada2', 'video', e.target.value)}
                     placeholder="URL Vimeo imagen 2..."
-                    className="w-full rounded-xl border border-slate-800 bg-slate-900/40 py-2.5 pl-9 pr-3 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-red transition-all"
+                    className="w-full rounded-xl border border-slate-800 bg-slate-900/40 py-2.5 pl-9 pr-3 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-blue transition-all"
                   />
                 </div>
               </div>

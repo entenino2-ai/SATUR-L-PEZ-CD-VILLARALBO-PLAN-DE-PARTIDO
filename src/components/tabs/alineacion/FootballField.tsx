@@ -169,7 +169,7 @@ export default function FootballField({
                 relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full border-2 shadow-lg cursor-pointer
                 ${isLocal 
                   ? player 
-                    ? 'bg-primary-red border-white/80' 
+                    ? 'bg-primary-blue border-white/80' 
                     : 'bg-white/10 border-white/40 border-dashed hover:bg-white/20' 
                   : 'bg-primary-blue border-white/50 opacity-80'}
               `}

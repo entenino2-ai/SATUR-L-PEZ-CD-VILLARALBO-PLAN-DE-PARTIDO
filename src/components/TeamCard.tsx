@@ -38,11 +38,11 @@ export default function TeamCard({ team, onEdit, onDelete }: TeamCardProps) {
   };
 
   return (
-    <div className="group relative flex items-center justify-between rounded-2xl border border-border bg-card p-4.5 shadow-sm transition-all duration-300 hover:border-primary-purple/30 hover:shadow-md dark:shadow-slate-900/10">
+    <div className="group relative flex items-center justify-between rounded-2xl border border-border bg-card p-4.5 shadow-sm transition-all duration-300 hover:border-primary/30 hover:shadow-md dark:shadow-slate-900/10">
       
       {/* Decorative side accent for the main club */}
       {isCDVillaralbo && (
-        <div className="absolute left-0 top-0 bottom-0 w-1.5 rounded-l-2xl bg-gradient-to-b from-primary-purple to-primary-red" />
+        <div className="absolute left-0 top-0 bottom-0 w-1.5 rounded-l-2xl bg-gradient-to-b from-primary to-primary-blue" />
       )}
 
       <div className="flex items-center gap-4">
@@ -56,7 +56,7 @@ export default function TeamCard({ team, onEdit, onDelete }: TeamCardProps) {
               className="h-full w-full object-contain"
             />
           ) : (
-            <div className="flex h-full w-full items-center justify-center bg-gradient-to-tr from-primary-purple/10 to-primary-red/10 rounded-xl text-primary-purple font-black text-base border border-primary-purple/20">
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-tr from-primary/10 to-primary-blue/10 rounded-xl text-primary font-black text-base border border-primary/20">
               {getInitials(team.nombre)}
             </div>
           )}
@@ -65,11 +65,11 @@ export default function TeamCard({ team, onEdit, onDelete }: TeamCardProps) {
         {/* Team details */}
         <div>
           <div className="flex items-center gap-2">
-            <h3 className="text-sm font-extrabold text-foreground group-hover:text-primary-purple transition-colors duration-200 sm:text-base">
+            <h3 className="text-sm font-extrabold text-foreground group-hover:text-primary transition-colors duration-200 sm:text-base">
               {team.nombre}
             </h3>
             {isCDVillaralbo && (
-              <span className="rounded-full bg-primary-red/10 px-2 py-0.5 text-[9px] font-black text-primary-red uppercase tracking-wider">
+              <span className="rounded-full bg-primary-blue/10 px-2 py-0.5 text-[9px] font-black text-primary-blue uppercase tracking-wider">
                 Principal
               </span>
             )}
@@ -86,7 +86,7 @@ export default function TeamCard({ team, onEdit, onDelete }: TeamCardProps) {
       <div className="flex gap-1.5">
         <button
           onClick={() => onEdit(team)}
-          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-primary-purple dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-primary-purple transition-all duration-200"
+          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-primary dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-primary transition-all duration-200"
           title="Editar"
         >
           <Edit2 className="h-4 w-4" />
@@ -95,7 +95,7 @@ export default function TeamCard({ team, onEdit, onDelete }: TeamCardProps) {
         {/* Don't allow deletion of CD Villaralbo main team for safety, but allow deleting other rival teams */}
         <button
           onClick={() => onDelete(team.id)}
-          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-500 hover:bg-rose-50 hover:text-primary-red dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-rose-950/20 dark:hover:text-primary-red transition-all duration-200"
+          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-500 hover:bg-rose-50 hover:text-primary-blue dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-rose-950/20 dark:hover:text-primary-blue transition-all duration-200"
           title="Eliminar"
         >
           <Trash2 className="h-4 w-4" />

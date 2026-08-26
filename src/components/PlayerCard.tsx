@@ -86,7 +86,7 @@ export default function PlayerCard({ player, onEdit, onDelete, onView }: PlayerC
     <div className="group relative overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:shadow-slate-900/10">
       
       {/* Decorative colored strip */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-purple via-primary-red to-primary-blue opacity-80" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary-blue to-primary-blue opacity-80" />
 
       {/* Card Header: Dorsal & Position */}
       <div className="flex items-center justify-between">
@@ -113,14 +113,14 @@ export default function PlayerCard({ player, onEdit, onDelete, onView }: PlayerC
               className="h-full w-full object-cover"
             />
           ) : (
-            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary-purple/20 to-primary-red/20 text-xl font-black text-primary-purple">
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary/20 to-primary-blue/20 text-xl font-black text-primary">
               {getInitials(player.nombre)}
             </div>
           )}
         </div>
 
         {/* Player Name and Specific position */}
-        <h3 className="mt-4 text-center text-base font-extrabold tracking-tight text-foreground line-clamp-1 group-hover:text-primary-red transition-colors duration-200">
+        <h3 className="mt-4 text-center text-base font-extrabold tracking-tight text-foreground line-clamp-1 group-hover:text-primary-blue transition-colors duration-200">
           {player.nombre}
         </h3>
         
@@ -162,7 +162,7 @@ export default function PlayerCard({ player, onEdit, onDelete, onView }: PlayerC
 
         <button
           onClick={() => onEdit(player)}
-          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-primary-purple dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-primary-purple transition-all duration-200"
+          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-primary dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-primary transition-all duration-200"
           title="Editar"
         >
           <Edit2 className="h-4 w-4" />
@@ -170,7 +170,7 @@ export default function PlayerCard({ player, onEdit, onDelete, onView }: PlayerC
 
         <button
           onClick={() => onDelete(player.id)}
-          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-500 hover:bg-rose-50 hover:text-primary-red dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-rose-950/20 dark:hover:text-primary-red transition-all duration-200"
+          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-500 hover:bg-rose-50 hover:text-primary-blue dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-rose-950/20 dark:hover:text-primary-blue transition-all duration-200"
           title="Eliminar"
         >
           <Trash2 className="h-4 w-4" />

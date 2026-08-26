@@ -295,11 +295,11 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
                 placeholder="Pega la URL de YouTube..."
                 value={videoUrl}
                 onChange={(e) => setVideoUrl(e.target.value)}
-                className="flex-1 rounded-xl border border-border bg-background px-3.5 py-2 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+                className="flex-1 rounded-xl border border-border bg-background px-3.5 py-2 text-xs font-semibold outline-none focus:border-primary transition-all"
               />
               <button
                 onClick={handleLoadVideo}
-                className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-purple text-white hover:bg-primary-purple/90 transition-colors"
+                className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-white hover:bg-primary/90 transition-colors"
                 title="Cargar Video"
               >
                 <Play className="h-4.5 w-4.5 fill-white" />
@@ -354,9 +354,9 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
 
         {/* Event Edit Form Modal Overlay inside this panel */}
         {showEventForm && (
-          <form onSubmit={handleSaveEvent} className="rounded-2xl border border-primary-purple/35 bg-primary-purple/5 p-5 shadow-sm space-y-4 animate-in slide-in-from-top-3">
+          <form onSubmit={handleSaveEvent} className="rounded-2xl border border-primary/35 bg-primary/5 p-5 shadow-sm space-y-4 animate-in slide-in-from-top-3">
             <div className="flex justify-between items-center border-b border-border/60 pb-2">
-              <span className="text-xs font-black uppercase text-primary-purple">Detalles de {selectedEventType.toUpperCase()}</span>
+              <span className="text-xs font-black uppercase text-primary">Detalles de {selectedEventType.toUpperCase()}</span>
               <button type="button" onClick={() => setShowEventForm(false)} className="text-xs font-bold text-muted-text hover:text-foreground">Cerrar</button>
             </div>
 
@@ -379,7 +379,7 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
                   max="120"
                   value={partidoMinuto}
                   onChange={(e) => setPartidoMinuto(Number(e.target.value))}
-                  className="w-full rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold outline-none focus:border-primary-purple"
+                  className="w-full rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold outline-none focus:border-primary"
                   required
                 />
               </div>
@@ -395,7 +395,7 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
                   max="100"
                   value={posX}
                   onChange={(e) => setPosX(Number(e.target.value))}
-                  className="w-full rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold outline-none focus:border-primary-purple"
+                  className="w-full rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold outline-none focus:border-primary"
                 />
               </div>
 
@@ -407,7 +407,7 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
                   max="100"
                   value={posY}
                   onChange={(e) => setPosY(Number(e.target.value))}
-                  className="w-full rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold outline-none focus:border-primary-purple"
+                  className="w-full rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold outline-none focus:border-primary"
                 />
               </div>
             </div>
@@ -419,7 +419,7 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
                 value={descripcion}
                 onChange={(e) => setDescripcion(e.target.value)}
                 placeholder="Ej. Gol de Chechi Blanco tras centro..."
-                className="w-full rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold outline-none focus:border-primary-purple resize-none"
+                className="w-full rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold outline-none focus:border-primary resize-none"
                 required
               />
             </div>
@@ -427,7 +427,7 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
             <button
               type="submit"
               disabled={savingEvent}
-              className="flex w-full items-center justify-center gap-1.5 rounded-xl bg-primary-purple text-white font-extrabold text-xs py-2.5 shadow hover:bg-primary-purple/95 transition-all"
+              className="flex w-full items-center justify-center gap-1.5 rounded-xl bg-primary text-white font-extrabold text-xs py-2.5 shadow hover:bg-primary/95 transition-all"
             >
               {savingEvent ? <Loader2 className="h-4 w-4 animate-spin" /> : <Plus className="h-4 w-4" />}
               <span>Registrar Evento</span>
@@ -535,7 +535,7 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
                     onClick={() => setFilterType(type)}
                     className={`rounded-lg px-3 py-1 text-xs font-bold transition-all ${
                       filterType === type
-                        ? 'bg-primary-purple text-white'
+                        ? 'bg-primary text-white'
                         : 'border border-border text-muted-text hover:bg-slate-50 hover:text-foreground dark:hover:bg-slate-800'
                     }`}
                   >
@@ -546,7 +546,7 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
 
               {loading ? (
                 <div className="flex h-32 items-center justify-center">
-                  <Loader2 className="h-6 w-6 animate-spin text-primary-purple" />
+                  <Loader2 className="h-6 w-6 animate-spin text-primary" />
                 </div>
               ) : filteredEvents.length === 0 ? (
                 <p className="text-center text-xs font-semibold text-muted-text py-12">No hay eventos registrados que coincidan.</p>
@@ -572,7 +572,7 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
                               {ev.tipo}
                             </span>
                           </td>
-                          <td className="py-3 font-mono text-primary-purple">{formatTime(ev.minuto_video)}</td>
+                          <td className="py-3 font-mono text-primary">{formatTime(ev.minuto_video)}</td>
                           <td className="py-3 font-mono">{ev.minuto_partido}&apos;</td>
                           <td className="py-3 max-w-xs truncate text-foreground" title={ev.descripcion}>{ev.descripcion}</td>
                           <td className="py-3 text-center text-muted-text font-mono">{Math.round(ev.posicion_x)},{Math.round(ev.posicion_y)}</td>

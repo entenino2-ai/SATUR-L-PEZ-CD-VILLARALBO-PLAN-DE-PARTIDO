@@ -105,7 +105,7 @@ export default function TeamModal({ isOpen, onClose, team, onSave }: TeamModalPr
       {/* Modal Card */}
       <div className="relative z-10 w-full max-w-md overflow-hidden rounded-2xl border border-border bg-card text-foreground shadow-2xl transition-all">
         {/* Decorative Top Line */}
-        <div className="h-1.5 w-full bg-gradient-to-r from-primary-purple via-primary-red to-primary-blue" />
+        <div className="h-1.5 w-full bg-gradient-to-r from-primary via-primary-blue to-primary-blue" />
 
         {/* Modal Header */}
         <div className="flex items-center justify-between border-b border-border px-6 py-4">
@@ -123,7 +123,7 @@ export default function TeamModal({ isOpen, onClose, team, onSave }: TeamModalPr
         {/* Form Body */}
         <form onSubmit={handleSubmit} className="p-6 space-y-5">
           {error && (
-            <div className="flex items-start gap-2.5 rounded-xl border border-rose-500/20 bg-rose-500/10 p-3.5 text-xs font-bold text-primary-red">
+            <div className="flex items-start gap-2.5 rounded-xl border border-rose-500/20 bg-rose-500/10 p-3.5 text-xs font-bold text-primary-blue">
               <ShieldAlert className="h-4.5 w-4.5 shrink-0" />
               <span>{error}</span>
             </div>
@@ -181,7 +181,7 @@ export default function TeamModal({ isOpen, onClose, team, onSave }: TeamModalPr
               value={nombre}
               onChange={(e) => setNombre(e.target.value)}
               disabled={isSaving}
-              className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold outline-none focus:border-primary-purple focus:ring-2 focus:ring-primary-purple/20 transition-all"
+              className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
             />
           </div>
 
@@ -198,7 +198,7 @@ export default function TeamModal({ isOpen, onClose, team, onSave }: TeamModalPr
             <button
               type="submit"
               disabled={isSaving}
-              className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-6 py-3 text-xs font-bold text-white shadow-md hover:from-primary-purple/95 hover:to-primary-red/95 cursor-pointer disabled:opacity-70"
+              className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary to-primary-blue px-6 py-3 text-xs font-bold text-white shadow-md hover:from-primary/95 hover:to-primary-blue/95 cursor-pointer disabled:opacity-70"
             >
               {isSaving ? (
                 <>

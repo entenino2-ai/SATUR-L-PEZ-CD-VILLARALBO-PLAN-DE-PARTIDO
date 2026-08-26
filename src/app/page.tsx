@@ -455,7 +455,7 @@ export default function DashboardPage() {
                       setSelectedPlayer(null);
                       setIsPlayerModalOpen(true);
                     }}
-                    className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary-purple/95 hover:to-primary-red/95 transition-all duration-200 cursor-pointer"
+                    className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary to-primary-blue px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary/95 hover:to-primary-blue/95 transition-all duration-200 cursor-pointer"
                   >
                     <Plus className="h-4 w-4" />
                     <span>Añadir Jugador</span>
@@ -473,7 +473,7 @@ export default function DashboardPage() {
                     placeholder="Buscar jugador por nombre o dorsal..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full rounded-xl border border-border bg-background py-2.5 pr-4 pl-10 text-xs font-semibold outline-none focus:border-primary-purple focus:ring-1 focus:ring-primary-purple/20 transition-all"
+                    className="w-full rounded-xl border border-border bg-background py-2.5 pr-4 pl-10 text-xs font-semibold outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
                   />
                 </div>
 
@@ -485,7 +485,7 @@ export default function DashboardPage() {
                       onClick={() => setPositionFilter(filter)}
                       className={`rounded-lg px-3.5 py-2 text-xs font-bold transition-all duration-150 cursor-pointer ${
                         positionFilter === filter
-                          ? 'bg-primary-purple text-white shadow-sm'
+                          ? 'bg-primary text-white shadow-sm'
                           : 'border border-border bg-background text-muted-text hover:bg-slate-50 hover:text-foreground dark:hover:bg-slate-800'
                       }`}
                     >
@@ -498,7 +498,7 @@ export default function DashboardPage() {
               {/* Loading State */}
               {loading ? (
                 <div className="flex h-64 flex-col items-center justify-center gap-3">
-                  <Loader2 className="h-8 w-8 animate-spin text-primary-purple" />
+                  <Loader2 className="h-8 w-8 animate-spin text-primary" />
                   <p className="text-xs font-bold text-muted-text">Cargando jugadores desde Supabase...</p>
                 </div>
               ) : filteredPlayers.length === 0 ? (
@@ -547,7 +547,7 @@ export default function DashboardPage() {
                     setSelectedTeam(null);
                     setIsTeamModalOpen(true);
                   }}
-                  className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary-purple/95 hover:to-primary-red/95 transition-all duration-200 cursor-pointer sm:self-center"
+                  className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary to-primary-blue px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary/95 hover:to-primary-blue/95 transition-all duration-200 cursor-pointer sm:self-center"
                 >
                   <Plus className="h-4 w-4" />
                   <span>Añadir Equipo</span>
@@ -563,7 +563,7 @@ export default function DashboardPage() {
                     placeholder="Buscar equipo por nombre de club..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full rounded-xl border border-border bg-background py-2.5 pr-4 pl-10 text-xs font-semibold outline-none focus:border-primary-purple focus:ring-1 focus:ring-primary-purple/20 transition-all"
+                    className="w-full rounded-xl border border-border bg-background py-2.5 pr-4 pl-10 text-xs font-semibold outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all"
                   />
                 </div>
               </div>
@@ -571,7 +571,7 @@ export default function DashboardPage() {
               {/* Loading State */}
               {loading ? (
                 <div className="flex h-64 flex-col items-center justify-center gap-3">
-                  <Loader2 className="h-8 w-8 animate-spin text-primary-purple" />
+                  <Loader2 className="h-8 w-8 animate-spin text-primary" />
                   <p className="text-xs font-bold text-muted-text">Cargando equipos desde Supabase...</p>
                 </div>
               ) : filteredTeams.length === 0 ? (
@@ -627,7 +627,7 @@ export default function DashboardPage() {
           
           <div className="relative z-10 w-full max-w-lg overflow-hidden rounded-2xl border border-border bg-card text-foreground shadow-2xl animate-in zoom-in-95 duration-200">
             {/* Header backdrop color based on position */}
-            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-r from-primary-purple/90 via-primary-red/95 to-primary-blue/90" />
+            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-r from-primary/90 via-primary-blue/95 to-primary-blue/90" />
             
             {/* Close button */}
             <button 
@@ -646,7 +646,7 @@ export default function DashboardPage() {
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={viewedPlayer.foto_url} alt={viewedPlayer.nombre} className="h-full w-full object-cover" />
                   ) : (
-                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary-purple/35 to-primary-red/35 text-2xl font-black text-white">
+                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary/35 to-primary-blue/35 text-2xl font-black text-white">
                       {viewedPlayer.nombre.split(' ').slice(0, 2).map(n => n[0]).join('').toUpperCase()}
                     </div>
                   )}
@@ -710,7 +710,7 @@ export default function DashboardPage() {
               {/* Dynamic Mock Ratings breakdown */}
               <div className="mt-6">
                 <h4 className="flex items-center gap-1.5 text-xs font-black text-foreground uppercase mb-3">
-                  <Award className="h-4 w-4 text-primary-purple" /> Valoración del Analista Técnico
+                  <Award className="h-4 w-4 text-primary" /> Valoración del Analista Técnico
                 </h4>
                 <div className="space-y-3.5">
                   {getPlayerMockStats(viewedPlayer.demarcacion, viewedPlayer.forma).map((stat) => (
@@ -718,11 +718,11 @@ export default function DashboardPage() {
                       <span className="text-[11px] font-bold w-28 text-muted-text truncate">{stat.name}</span>
                       <div className="flex-1 h-2.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800 border border-border/30">
                         <div 
-                          className="h-full rounded-full bg-gradient-to-r from-primary-purple to-primary-red transition-all duration-500"
+                          className="h-full rounded-full bg-gradient-to-r from-primary to-primary-blue transition-all duration-500"
                           style={{ width: `${stat.val}%` }}
                         />
                       </div>
-                      <span className="text-[11px] font-black text-primary-purple w-6 text-right">{stat.val}</span>
+                      <span className="text-[11px] font-black text-primary w-6 text-right">{stat.val}</span>
                     </div>
                   ))}
                 </div>

@@ -213,7 +213,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
             setEstado('Programado');
             setIsModalOpen(true);
           }}
-          className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary-purple/95 hover:to-primary-red/95 transition-all duration-200 cursor-pointer"
+          className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary to-primary-blue px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary/95 hover:to-primary-blue/95 transition-all duration-200 cursor-pointer"
         >
           <Plus className="h-4 w-4" />
           <span>Programar Partido</span>
@@ -223,7 +223,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
       {/* Grid de Partidos */}
       {loading ? (
         <div className="flex h-64 flex-col items-center justify-center gap-3">
-          <Loader2 className="h-8 w-8 animate-spin text-primary-purple" />
+          <Loader2 className="h-8 w-8 animate-spin text-primary" />
           <p className="text-xs font-bold text-muted-text">Cargando partidos desde Supabase...</p>
         </div>
       ) : partidos.length === 0 ? (
@@ -245,13 +245,13 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
               <div
                 key={partido.id}
                 onClick={() => onSelectPartido(partido)}
-                className="group relative flex flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition-all duration-300 hover:border-primary-purple/30 hover:shadow-md cursor-pointer dark:shadow-slate-900/10"
+                className="group relative flex flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition-all duration-300 hover:border-primary/30 hover:shadow-md cursor-pointer dark:shadow-slate-900/10"
               >
                 {/* Cabecera de la Tarjeta */}
                 <div className="flex items-center justify-between mb-4">
                   <span className={`rounded-xl px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider ${
                     partido.tipo === 'Liga'
-                      ? 'bg-primary-purple/10 text-primary-purple'
+                      ? 'bg-primary/10 text-primary'
                       : partido.tipo === 'Copa'
                       ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/30 dark:text-amber-300'
                       : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300'
@@ -262,13 +262,13 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                   <div className="flex gap-1">
                     <button
                       onClick={(e) => handleEditClick(partido, e)}
-                      className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-primary-purple dark:hover:bg-slate-800 transition-colors"
+                      className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-primary dark:hover:bg-slate-800 transition-colors"
                     >
                       <Pencil className="h-4 w-4" />
                     </button>
                     <button
                       onClick={(e) => handleDeletePartido(partido.id, e)}
-                      className="rounded-lg p-1.5 text-slate-400 hover:bg-rose-50 hover:text-primary-red dark:hover:bg-rose-950/20 transition-colors"
+                      className="rounded-lg p-1.5 text-slate-400 hover:bg-rose-50 hover:text-primary-blue dark:hover:bg-rose-950/20 transition-colors"
                     >
                       <Trash2 className="h-4 w-4" />
                     </button>
@@ -284,7 +284,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                         // eslint-disable-next-line @next/next/no-img-element
                         <img src={local.escudo_url} alt={local.nombre} className="h-full w-full object-contain" />
                       ) : (
-                        <div className="flex h-full w-full items-center justify-center bg-gradient-to-tr from-primary-purple/10 to-primary-red/10 rounded-xl text-primary-purple font-black text-xs">
+                        <div className="flex h-full w-full items-center justify-center bg-gradient-to-tr from-primary/10 to-primary-blue/10 rounded-xl text-primary font-black text-xs">
                           {getInitials(local.nombre)}
                         </div>
                       )}
@@ -302,7 +302,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                         // eslint-disable-next-line @next/next/no-img-element
                         <img src={visitante.escudo_url} alt={visitante.nombre} className="h-full w-full object-contain" />
                       ) : (
-                        <div className="flex h-full w-full items-center justify-center bg-gradient-to-tr from-primary-purple/10 to-primary-red/10 rounded-xl text-primary-purple font-black text-xs">
+                        <div className="flex h-full w-full items-center justify-center bg-gradient-to-tr from-primary/10 to-primary-blue/10 rounded-xl text-primary font-black text-xs">
                           {getInitials(visitante.nombre)}
                         </div>
                       )}
@@ -332,7 +332,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                     Estado: <span className="font-extrabold text-foreground">{partido.estado}</span>
                   </span>
                   
-                  <span className="flex items-center gap-1 text-[11px] font-black text-primary-purple group-hover:translate-x-1.5 transition-transform duration-200">
+                  <span className="flex items-center gap-1 text-[11px] font-black text-primary group-hover:translate-x-1.5 transition-transform duration-200">
                     <span>Abrir detalle</span>
                     <ArrowRight className="h-3 w-3" />
                   </span>
@@ -365,7 +365,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
             {/* Modal Body */}
             <form onSubmit={handleCreatePartido} className="p-6 space-y-4.5">
               {errorMsg && (
-                <div className="rounded-xl bg-rose-500/10 border border-rose-500/25 p-3 text-xs font-bold text-primary-red">
+                <div className="rounded-xl bg-rose-500/10 border border-rose-500/25 p-3 text-xs font-bold text-primary-blue">
                   {errorMsg}
                 </div>
               )}
@@ -377,7 +377,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                   <select
                     value={equipoLocalId}
                     onChange={(e) => setEquipoLocalId(e.target.value)}
-                    className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+                    className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary transition-all"
                     required
                   >
                     <option value="">Seleccionar...</option>
@@ -392,7 +392,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                   <select
                     value={equipoVisitanteId}
                     onChange={(e) => setEquipoVisitanteId(e.target.value)}
-                    className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+                    className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary transition-all"
                     required
                   >
                     <option value="">Seleccionar...</option>
@@ -410,7 +410,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                   type="datetime-local"
                   value={fecha}
                   onChange={(e) => setFecha(e.target.value)}
-                  className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+                  className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary transition-all"
                   required
                 />
               </div>
@@ -423,7 +423,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                   placeholder="Ej. Estadio Municipal Lezama"
                   value={lugar}
                   onChange={(e) => setLugar(e.target.value)}
-                  className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+                  className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary transition-all"
                 />
               </div>
 
@@ -434,7 +434,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                   <select
                     value={tipo}
                     onChange={(e) => setTipo(e.target.value as any)}
-                    className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+                    className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary transition-all"
                   >
                     <option value="Liga">Liga</option>
                     <option value="Amistoso">Amistoso</option>
@@ -447,7 +447,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                   <select
                     value={estado}
                     onChange={(e) => setEstado(e.target.value as any)}
-                    className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+                    className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary transition-all"
                   >
                     <option value="Programado">Programado</option>
                     <option value="En juego">En juego</option>
@@ -468,7 +468,7 @@ export default function PartidoList({ onSelectPartido, teams }: PartidoListProps
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary-purple/95 hover:to-primary-red/95 transition-all cursor-pointer disabled:opacity-50"
+                  className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary to-primary-blue px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary/95 hover:to-primary-blue/95 transition-all cursor-pointer disabled:opacity-50"
                 >
                   {submitting && <Loader2 className="h-4 w-4 animate-spin" />}
                   <span>Guardar Partido</span>

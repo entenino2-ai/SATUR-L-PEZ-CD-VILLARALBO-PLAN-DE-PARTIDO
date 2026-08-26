@@ -78,7 +78,7 @@ export default function TacticalAIPanel({
               Enfrentamiento de Sistemas:
             </p>
             <div className="flex items-center justify-center gap-3 font-black text-lg">
-              <span className="text-primary-red">{formacionLocal}</span>
+              <span className="text-primary-blue">{formacionLocal}</span>
               <span className="text-slate-400 text-sm">VS</span>
               <span className="text-primary-blue">{formacionRival}</span>
             </div>

@@ -170,7 +170,7 @@ export default function PlanPartidoTab({ partido, showToast }: PlanPartidoTabPro
   if (loading) {
     return (
       <div className="flex h-64 flex-col items-center justify-center gap-3">
-        <Loader2 className="h-8 w-8 animate-spin text-primary-purple" />
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
         <p className="text-xs font-bold text-muted-text">Cargando plan de juego...</p>
       </div>
     );
@@ -202,7 +202,7 @@ export default function PlanPartidoTab({ partido, showToast }: PlanPartidoTabPro
             value={state.notes}
             onChange={(e) => setState(prev => ({ ...prev, notes: e.target.value }))}
             placeholder={`Escribe tu análisis de ${title.toLowerCase()}...`}
-            className="w-full rounded-xl border border-border bg-background px-3 py-2.5 text-xs font-semibold outline-none focus:border-primary-purple resize-none transition-all"
+            className="w-full rounded-xl border border-border bg-background px-3 py-2.5 text-xs font-semibold outline-none focus:border-primary resize-none transition-all"
           />
         </div>
 
@@ -216,7 +216,7 @@ export default function PlanPartidoTab({ partido, showToast }: PlanPartidoTabPro
               value={state.video}
               onChange={(e) => setState(prev => ({ ...prev, video: e.target.value }))}
               placeholder="https://vimeo.com/... o youtube.com/..."
-              className="w-full rounded-xl border border-border bg-background py-2.5 pl-10 pr-3.5 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+              className="w-full rounded-xl border border-border bg-background py-2.5 pl-10 pr-3.5 text-xs font-semibold outline-none focus:border-primary transition-all"
             />
           </div>
         </div>
@@ -262,7 +262,7 @@ export default function PlanPartidoTab({ partido, showToast }: PlanPartidoTabPro
                     className="flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-slate-50/50 hover:bg-slate-100 px-4 py-2.5 text-xs font-bold text-slate-600 dark:bg-slate-800/20 dark:text-slate-300 dark:hover:bg-slate-850 cursor-pointer shadow-sm transition-all"
                   >
                     {isUploading ? (
-                      <Loader2 className="h-4 w-4 animate-spin text-primary-purple" />
+                      <Loader2 className="h-4 w-4 animate-spin text-primary" />
                     ) : (
                       <Upload className="h-4 w-4 text-slate-400" />
                     )}
@@ -284,7 +284,7 @@ export default function PlanPartidoTab({ partido, showToast }: PlanPartidoTabPro
               value={state.docUrl}
               onChange={(e) => setState(prev => ({ ...prev, docUrl: e.target.value }))}
               placeholder="https://drive.google.com/file/d/..."
-              className="w-full rounded-xl border border-border bg-background py-2.5 pl-10 pr-3.5 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+              className="w-full rounded-xl border border-border bg-background py-2.5 pl-10 pr-3.5 text-xs font-semibold outline-none focus:border-primary transition-all"
             />
           </div>
         </div>
@@ -302,7 +302,7 @@ export default function PlanPartidoTab({ partido, showToast }: PlanPartidoTabPro
         <button
           onClick={handleSave}
           disabled={saving}
-          className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary-purple/95 hover:to-primary-red/95 transition-all cursor-pointer disabled:opacity-50"
+          className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary to-primary-blue px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary/95 hover:to-primary-blue/95 transition-all cursor-pointer disabled:opacity-50"
         >
           {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
           <span>Guardar plan</span>

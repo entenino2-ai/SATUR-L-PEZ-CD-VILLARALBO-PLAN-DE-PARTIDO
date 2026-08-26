@@ -137,7 +137,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
   if (loading) {
     return (
       <div className="flex h-64 flex-col items-center justify-center gap-3">
-        <Loader2 className="h-8 w-8 animate-spin text-primary-purple" />
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
         <p className="text-xs font-bold text-muted-text">Cargando informe del rival...</p>
       </div>
     );
@@ -154,7 +154,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
         <button
           onClick={handleSave}
           disabled={saving}
-          className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary-purple to-primary-red px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary-purple/95 hover:to-primary-red/95 transition-all cursor-pointer disabled:opacity-50"
+          className="flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-primary to-primary-blue px-5 py-2.5 text-xs font-extrabold text-white shadow-md hover:from-primary/95 hover:to-primary-blue/95 transition-all cursor-pointer disabled:opacity-50"
         >
           {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
           <span>Guardar Informe</span>
@@ -165,7 +165,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
       <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-4">
         {/* Salida Balon */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-red px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
             Salida de Balón
           </span>
           <div className="flex flex-wrap gap-2">
@@ -175,7 +175,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
                 onClick={() => setSalidaBalon(salidaBalon === option ? '' : option)}
                 className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
                   salidaBalon === option
-                    ? 'bg-primary-red border-primary-red text-white'
+                    ? 'bg-primary-blue border-primary-blue text-white'
                     : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
                 }`}
               >
@@ -187,7 +187,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
 
         {/* Presion */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-red px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
             Presión
           </span>
           <div className="flex flex-wrap gap-2">
@@ -197,7 +197,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
                 onClick={() => setPresion(presion === option ? '' : option)}
                 className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
                   presion === option
-                    ? 'bg-primary-red border-primary-red text-white'
+                    ? 'bg-primary-blue border-primary-blue text-white'
                     : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
                 }`}
               >
@@ -209,7 +209,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
 
         {/* Bloque */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-red px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
             Bloque
           </span>
           <div className="flex flex-wrap gap-2">
@@ -219,7 +219,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
                 onClick={() => setBloque(bloque === option ? '' : option)}
                 className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
                   bloque === option
-                    ? 'bg-primary-red border-primary-red text-white'
+                    ? 'bg-primary-blue border-primary-blue text-white'
                     : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
                 }`}
               >
@@ -231,7 +231,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
 
         {/* Linea Defensiva */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-red px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
             Línea Defensiva
           </span>
           <div className="flex flex-wrap gap-2">
@@ -241,7 +241,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
                 onClick={() => setLineaDefensiva(lineaDefensiva === option ? '' : option)}
                 className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
                   lineaDefensiva === option
-                    ? 'bg-primary-red border-primary-red text-white'
+                    ? 'bg-primary-blue border-primary-blue text-white'
                     : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
                 }`}
               >
@@ -253,7 +253,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
 
         {/* Transicion Ofensiva */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-red px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
             Transición Ofensiva
           </span>
           <div className="flex flex-wrap gap-2">
@@ -263,7 +263,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
                 onClick={() => setTransicionOfensiva(transicionOfensiva === option ? '' : option)}
                 className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
                   transicionOfensiva === option
-                    ? 'bg-primary-red border-primary-red text-white'
+                    ? 'bg-primary-blue border-primary-blue text-white'
                     : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
                 }`}
               >
@@ -275,7 +275,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
 
         {/* Transicion Defensiva */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-red px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
             Transición Defensiva
           </span>
           <div className="flex flex-wrap gap-2">
@@ -285,7 +285,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
                 onClick={() => setTransicionDefensiva(transicionDefensiva === option ? '' : option)}
                 className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
                   transicionDefensiva === option
-                    ? 'bg-primary-red border-primary-red text-white'
+                    ? 'bg-primary-blue border-primary-blue text-white'
                     : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
                 }`}
               >
@@ -309,7 +309,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
               placeholder="Pega el enlace de Google Slides (compartir > publicar)..."
               value={slidesUrl}
               onChange={(e) => setSlidesUrl(e.target.value)}
-              className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+              className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary transition-all"
             />
           </div>
 
@@ -340,7 +340,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
               placeholder="Pega el enlace de Vimeo o YouTube (ej. https://vimeo.com/...)"
               value={videoUrl}
               onChange={(e) => setVideoUrl(e.target.value)}
-              className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary-purple transition-all"
+              className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-semibold outline-none focus:border-primary transition-all"
             />
           </div>
 

@@ -56,7 +56,7 @@ export default function Header({ onMenuToggle, activeTab }: HeaderProps) {
           <div className="hidden items-center gap-1.5 text-xs font-semibold text-muted-text sm:flex">
             <span>Club</span>
             <span>/</span>
-            <span className="text-primary-red">{breadcrumb}</span>
+            <span className="text-primary-blue">{breadcrumb}</span>
           </div>
           {/* Page title */}
           <h1 className="text-base font-extrabold tracking-tight sm:text-lg">
@@ -75,7 +75,7 @@ export default function Header({ onMenuToggle, activeTab }: HeaderProps) {
 
         {/* Current Match day badge */}
         <div className="hidden items-center gap-1.5 rounded-xl border border-border bg-slate-50 px-3 py-1.5 text-xs font-bold dark:bg-slate-900/40 md:flex">
-          <Calendar className="h-3.5 w-3.5 text-primary-purple" />
+          <Calendar className="h-3.5 w-3.5 text-primary" />
           <span>Jornada 24</span>
         </div>
 
