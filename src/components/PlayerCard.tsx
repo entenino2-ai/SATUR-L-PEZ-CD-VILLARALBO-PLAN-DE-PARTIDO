@@ -90,13 +90,13 @@ export default function PlayerCard({ player, onEdit, onDelete, onView }: PlayerC
 
       {/* Card Header: Dorsal & Position */}
       <div className="flex items-center justify-between">
-        {/* Dorsal circle */}
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-sm font-extrabold text-foreground border border-border shadow-inner">
-          {player.dorsal !== null ? `#${player.dorsal}` : '--'}
+        {/* Dorsal badge */}
+        <div className="flex h-9 min-w-9 px-2.5 items-center justify-center rounded-xl bg-primary/10 border border-primary/25 text-primary dark:bg-blue-500/15 dark:border-blue-500/30 dark:text-blue-400 text-xs font-black tracking-wider shadow-sm">
+          {player.dorsal !== null && player.dorsal !== undefined ? `#${player.dorsal}` : 'N/A'}
         </div>
 
         {/* Position badge */}
-        <span className={`rounded-lg border px-2 py-0.5 text-[10px] font-extrabold tracking-wide uppercase ${posColor}`}>
+        <span className={`rounded-lg border px-2.5 py-1 text-[10px] font-black tracking-wider uppercase shadow-sm ${posColor}`}>
           {posLabel}
         </span>
       </div>
@@ -154,26 +154,26 @@ export default function PlayerCard({ player, onEdit, onDelete, onView }: PlayerC
       <div className="mt-5 flex gap-2 border-t border-border/60 pt-4">
         <button
           onClick={() => onView(player)}
-          className="flex flex-1 items-center justify-center gap-1.5 rounded-xl border border-border bg-slate-50 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-100 dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-slate-800/80 transition-colors duration-200"
+          className="flex flex-1 items-center justify-center gap-1.5 rounded-xl border border-border bg-slate-100/80 py-2 text-xs font-bold text-foreground hover:bg-slate-200 dark:bg-slate-800/80 dark:text-slate-200 dark:hover:bg-slate-700 transition-colors duration-200 cursor-pointer"
         >
-          <Eye className="h-3.5 w-3.5" />
+          <Eye className="h-3.5 w-3.5 text-primary dark:text-blue-400" />
           <span>Ver</span>
         </button>
 
         <button
           onClick={() => onEdit(player)}
-          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-primary dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-primary transition-all duration-200"
+          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-100/80 text-foreground hover:bg-slate-200 hover:text-primary dark:bg-slate-800/80 dark:text-slate-200 dark:hover:bg-slate-700 dark:hover:text-blue-400 transition-all duration-200 cursor-pointer"
           title="Editar"
         >
-          <Edit2 className="h-4 w-4" />
+          <Edit2 className="h-3.5 w-3.5" />
         </button>
 
         <button
           onClick={() => onDelete(player.id)}
-          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-500 hover:bg-rose-50 hover:text-primary-blue dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-rose-950/20 dark:hover:text-primary-blue transition-all duration-200"
+          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-100/80 text-muted-text hover:bg-rose-50 hover:text-rose-600 dark:bg-slate-800/80 dark:hover:bg-rose-950/30 dark:hover:text-rose-400 transition-all duration-200 cursor-pointer"
           title="Eliminar"
         >
-          <Trash2 className="h-4 w-4" />
+          <Trash2 className="h-3.5 w-3.5" />
         </button>
       </div>
     </div>
