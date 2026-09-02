@@ -68,14 +68,14 @@ export default function Header({ onMenuToggle, activeTab }: HeaderProps) {
       {/* Utilities / Meta info */}
       <div className="flex items-center gap-3">
         {/* Quick Season Badge */}
-        <div className="hidden items-center gap-1.5 rounded-xl border border-border bg-slate-50 px-3 py-1.5 text-xs font-bold dark:bg-slate-900/40 md:flex">
+        <div className="hidden items-center gap-1.5 rounded-xl border border-amber-500/30 bg-amber-500/10 px-3 py-1.5 text-xs font-black text-amber-600 dark:text-amber-400 md:flex shadow-sm">
           <Trophy className="h-3.5 w-3.5 text-amber-500" />
           <span>Temp. 26/27</span>
         </div>
 
         {/* Current Match day badge */}
-        <div className="hidden items-center gap-1.5 rounded-xl border border-border bg-slate-50 px-3 py-1.5 text-xs font-bold dark:bg-slate-900/40 md:flex">
-          <Calendar className="h-3.5 w-3.5 text-primary" />
+        <div className="hidden items-center gap-1.5 rounded-xl border border-sky-500/30 bg-sky-500/10 px-3 py-1.5 text-xs font-black text-sky-600 dark:text-sky-400 md:flex shadow-sm">
+          <Calendar className="h-3.5 w-3.5 text-sky-500" />
           <span>Jornada 24</span>
         </div>
 
