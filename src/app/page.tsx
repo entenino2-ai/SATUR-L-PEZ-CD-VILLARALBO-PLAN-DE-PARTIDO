@@ -54,7 +54,7 @@ const CD_VILLARALBO_SEED_PLAYERS: Omit<Jugador, 'id' | 'creado_en'>[] = [
 ];
 
 const SEED_TEAMS = [
-  { nombre: 'CD CD Villaralbo', escudo_url: null },
+  { nombre: 'CD Villaralbo', escudo_url: null },
   { nombre: 'Zamora CF', escudo_url: null },
   { nombre: 'Real Ávila CF', escudo_url: null },
   { nombre: 'Arandina CF', escudo_url: null },
