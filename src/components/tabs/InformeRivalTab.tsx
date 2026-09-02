@@ -165,7 +165,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
       <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-4">
         {/* Salida Balon */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-xl bg-slate-800 text-white px-3 py-2 text-[11px] font-black uppercase tracking-wider text-center w-full sm:w-44 shrink-0 shadow-sm border border-slate-700">
             Salida de Balón
           </span>
           <div className="flex flex-wrap gap-2">
@@ -173,10 +173,10 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
               <button
                 key={option}
                 onClick={() => setSalidaBalon(salidaBalon === option ? '' : option)}
-                className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
+                className={`rounded-xl px-4 py-2 text-xs font-black transition-all border cursor-pointer ${
                   salidaBalon === option
-                    ? 'bg-primary-blue border-primary-blue text-white'
-                    : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
+                    ? 'bg-primary border-primary text-white shadow-sm'
+                    : 'bg-background border-border text-foreground hover:bg-slate-100 dark:hover:bg-slate-800'
                 }`}
               >
                 {option.toUpperCase()}
@@ -187,7 +187,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
 
         {/* Presion */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-xl bg-slate-800 text-white px-3 py-2 text-[11px] font-black uppercase tracking-wider text-center w-full sm:w-44 shrink-0 shadow-sm border border-slate-700">
             Presión
           </span>
           <div className="flex flex-wrap gap-2">
@@ -195,10 +195,10 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
               <button
                 key={option}
                 onClick={() => setPresion(presion === option ? '' : option)}
-                className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
+                className={`rounded-xl px-4 py-2 text-xs font-black transition-all border cursor-pointer ${
                   presion === option
-                    ? 'bg-primary-blue border-primary-blue text-white'
-                    : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
+                    ? 'bg-primary border-primary text-white shadow-sm'
+                    : 'bg-background border-border text-foreground hover:bg-slate-100 dark:hover:bg-slate-800'
                 }`}
               >
                 {option.toUpperCase()}
@@ -209,7 +209,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
 
         {/* Bloque */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-xl bg-slate-800 text-white px-3 py-2 text-[11px] font-black uppercase tracking-wider text-center w-full sm:w-44 shrink-0 shadow-sm border border-slate-700">
             Bloque
           </span>
           <div className="flex flex-wrap gap-2">
@@ -217,10 +217,10 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
               <button
                 key={option}
                 onClick={() => setBloque(bloque === option ? '' : option)}
-                className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
+                className={`rounded-xl px-4 py-2 text-xs font-black transition-all border cursor-pointer ${
                   bloque === option
-                    ? 'bg-primary-blue border-primary-blue text-white'
-                    : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
+                    ? 'bg-primary border-primary text-white shadow-sm'
+                    : 'bg-background border-border text-foreground hover:bg-slate-100 dark:hover:bg-slate-800'
                 }`}
               >
                 {option.toUpperCase()}
@@ -231,7 +231,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
 
         {/* Linea Defensiva */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-xl bg-slate-800 text-white px-3 py-2 text-[11px] font-black uppercase tracking-wider text-center w-full sm:w-44 shrink-0 shadow-sm border border-slate-700">
             Línea Defensiva
           </span>
           <div className="flex flex-wrap gap-2">
@@ -239,10 +239,10 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
               <button
                 key={option}
                 onClick={() => setLineaDefensiva(lineaDefensiva === option ? '' : option)}
-                className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
+                className={`rounded-xl px-4 py-2 text-xs font-black transition-all border cursor-pointer ${
                   lineaDefensiva === option
-                    ? 'bg-primary-blue border-primary-blue text-white'
-                    : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
+                    ? 'bg-primary border-primary text-white shadow-sm'
+                    : 'bg-background border-border text-foreground hover:bg-slate-100 dark:hover:bg-slate-800'
                 }`}
               >
                 {option.toUpperCase()}
@@ -253,7 +253,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
 
         {/* Transicion Ofensiva */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-xl bg-slate-800 text-white px-3 py-2 text-[11px] font-black uppercase tracking-wider text-center w-full sm:w-44 shrink-0 shadow-sm border border-slate-700">
             Transición Ofensiva
           </span>
           <div className="flex flex-wrap gap-2">
@@ -261,10 +261,10 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
               <button
                 key={option}
                 onClick={() => setTransicionOfensiva(transicionOfensiva === option ? '' : option)}
-                className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
+                className={`rounded-xl px-4 py-2 text-xs font-black transition-all border cursor-pointer ${
                   transicionOfensiva === option
-                    ? 'bg-primary-blue border-primary-blue text-white'
-                    : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
+                    ? 'bg-primary border-primary text-white shadow-sm'
+                    : 'bg-background border-border text-foreground hover:bg-slate-100 dark:hover:bg-slate-800'
                 }`}
               >
                 {option.toUpperCase()}
@@ -275,7 +275,7 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
 
         {/* Transicion Defensiva */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <span className="rounded-lg bg-primary-blue px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white text-center w-full sm:w-44 shrink-0">
+          <span className="rounded-xl bg-slate-800 text-white px-3 py-2 text-[11px] font-black uppercase tracking-wider text-center w-full sm:w-44 shrink-0 shadow-sm border border-slate-700">
             Transición Defensiva
           </span>
           <div className="flex flex-wrap gap-2">
@@ -283,10 +283,10 @@ export default function InformeRivalTab({ partido, showToast }: InformeRivalTabP
               <button
                 key={option}
                 onClick={() => setTransicionDefensiva(transicionDefensiva === option ? '' : option)}
-                className={`rounded-xl px-4 py-2 text-xs font-bold transition-all border ${
+                className={`rounded-xl px-4 py-2 text-xs font-black transition-all border cursor-pointer ${
                   transicionDefensiva === option
-                    ? 'bg-primary-blue border-primary-blue text-white'
-                    : 'bg-background border-border text-muted-text hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-foreground'
+                    ? 'bg-primary border-primary text-white shadow-sm'
+                    : 'bg-background border-border text-foreground hover:bg-slate-100 dark:hover:bg-slate-800'
                 }`}
               >
                 {option.toUpperCase()}

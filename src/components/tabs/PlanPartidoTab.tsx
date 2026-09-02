@@ -259,12 +259,12 @@ export default function PlanPartidoTab({ partido, showToast }: PlanPartidoTabPro
                   />
                   <label
                     htmlFor={`file_input_${key}_${imgIndex}`}
-                    className="flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-slate-50/50 hover:bg-slate-100 px-4 py-2.5 text-xs font-bold text-slate-600 dark:bg-slate-800/20 dark:text-slate-300 dark:hover:bg-slate-850 cursor-pointer shadow-sm transition-all"
+                    className="flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-slate-100 hover:bg-slate-200 px-4 py-2.5 text-xs font-black text-foreground dark:bg-slate-800 dark:text-foreground dark:hover:bg-slate-700 cursor-pointer shadow-sm transition-all"
                   >
                     {isUploading ? (
                       <Loader2 className="h-4 w-4 animate-spin text-primary" />
                     ) : (
-                      <Upload className="h-4 w-4 text-slate-400" />
+                      <Upload className="h-4 w-4 text-muted-text" />
                     )}
                     <span>{isUploading ? 'Subiendo...' : `Subir Imagen ${imgIndex + 1}`}</span>
                   </label>

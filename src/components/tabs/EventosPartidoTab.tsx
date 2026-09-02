@@ -272,10 +272,10 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
 
   const getEventBadgeColor = (type: string) => {
     switch (type) {
-      case 'Gol': return 'bg-rose-500 text-white';
-      case 'Ocasión': return 'bg-orange-500 text-white';
-      case 'Duelo': return 'bg-amber-500 text-white';
-      default: return 'bg-slate-500 text-white';
+      case 'Gol': return 'bg-rose-600 text-white font-black shadow-sm';
+      case 'Ocasión': return 'bg-orange-600 text-white font-black shadow-sm';
+      case 'Duelo': return 'bg-amber-600 text-white font-black shadow-sm';
+      default: return 'bg-slate-700 text-white font-black shadow-sm';
     }
   };
 
@@ -528,15 +528,15 @@ export default function EventosPartidoTab({ partido, showToast }: EventosPartido
               
               {/* Type Filter row */}
               <div className="flex items-center gap-1.5 flex-wrap">
-                <span className="text-[10px] font-black text-muted-text mr-1.5">FILTRAR:</span>
+                <span className="text-[10px] font-black text-muted-text mr-1.5 uppercase">FILTRAR:</span>
                 {['Todos', 'Gol', 'Ocasión', 'Duelo', 'Nota'].map((type) => (
                   <button
                     key={type}
                     onClick={() => setFilterType(type)}
-                    className={`rounded-lg px-3 py-1 text-xs font-bold transition-all ${
+                    className={`rounded-xl px-3.5 py-1.5 text-xs font-black transition-all cursor-pointer ${
                       filterType === type
-                        ? 'bg-primary text-white'
-                        : 'border border-border text-muted-text hover:bg-slate-50 hover:text-foreground dark:hover:bg-slate-800'
+                        ? 'bg-primary text-white shadow-sm'
+                        : 'border border-border bg-background text-foreground hover:bg-slate-100 dark:hover:bg-slate-800'
                     }`}
                   >
                     {type}

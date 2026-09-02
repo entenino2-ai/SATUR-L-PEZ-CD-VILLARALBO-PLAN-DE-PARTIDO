@@ -8,8 +8,8 @@
   --border: #e2e8f0;
   --muted: #64748b;
   --primary: #00509e; /* Royal Blue */
-  --primary-red: #003f7a; /* Darker Blue */
-  --primary-blue: #3b82f6; /* Lighter Blue */
+  --primary-red: #dc2626; /* Vivid High Contrast Red */
+  --primary-blue: #0284c7; /* Vivid Sky Blue */
 }
 
 .dark {
@@ -19,9 +19,9 @@
   --card-foreground: #f8fafc;
   --border: #1e293b;
   --muted: #94a3b8;
-  --primary: #3b82f6;
-  --primary-red: #60a5fa;
-  --primary-blue: #93c5fd;
+  --primary: #2563eb;
+  --primary-red: #ef4444; /* Vivid High Contrast Red */
+  --primary-blue: #0284c7;
 }
 
 @theme {

@@ -116,15 +116,15 @@ export default function PartidoDetail({ partido, onBack, showToast }: PartidoDet
       </div>
 
       {/* Tabs navigation */}
-      <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar rounded-xl bg-slate-100/60 p-1 dark:bg-slate-900/30 w-fit">
+      <div className="flex items-center gap-2 overflow-x-auto no-scrollbar rounded-2xl bg-slate-200/80 p-1.5 dark:bg-slate-900 border border-border shadow-inner w-fit">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`rounded-lg px-4 py-2.5 text-xs font-black uppercase tracking-wider transition-all duration-150 cursor-pointer ${
+            className={`rounded-xl px-4 py-2.5 text-xs font-black uppercase tracking-wider transition-all duration-200 cursor-pointer ${
               activeTab === tab.id
-                ? 'bg-primary text-white shadow-sm'
-                : 'text-muted-text hover:text-foreground'
+                ? 'bg-primary text-white shadow-md font-black'
+                : 'text-slate-600 dark:text-slate-400 hover:text-foreground hover:bg-white/50 dark:hover:bg-slate-800'
             }`}
           >
             {tab.label}

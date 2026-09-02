@@ -264,28 +264,28 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
           return (
             <div
               key={num}
-              className="flex flex-col rounded-2xl border border-slate-800 bg-slate-950 p-4.5 text-slate-100 shadow-md space-y-4"
+              className="flex flex-col rounded-2xl border border-border bg-card p-5 text-foreground shadow-sm space-y-4"
             >
               {/* Corner Header */}
-              <div className="border-b border-slate-800 pb-2 flex justify-between items-center">
-                <span className="text-[10px] font-black text-primary-blue uppercase tracking-wider">CÓRNERS {tipo.toUpperCase()}</span>
-                <h4 className="text-xs font-black text-slate-300 uppercase">CÓRNER {num}</h4>
+              <div className="border-b border-border pb-2 flex justify-between items-center">
+                <span className="text-[10px] font-black text-primary uppercase tracking-wider">CÓRNERS {tipo.toUpperCase()}</span>
+                <span className="text-xs font-black text-foreground uppercase px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 border border-border">CÓRNER {num}</span>
               </div>
 
               {/* JUGADA 1 */}
-              <div className="space-y-3.5 border-b border-slate-900 pb-4">
-                <span className="text-[9px] font-extrabold text-slate-400 block tracking-widest uppercase">JUGADA PRINCIPAL</span>
+              <div className="space-y-3.5 border-b border-border pb-4">
+                <span className="text-[9px] font-black text-muted-text block tracking-widest uppercase">JUGADA PRINCIPAL</span>
                 
                 {/* File upload */}
                 {corner.jugada1.img ? (
-                  <div className="relative rounded-xl border border-slate-800 bg-slate-900 overflow-hidden group h-24">
+                  <div className="relative rounded-xl border border-border bg-slate-50 dark:bg-slate-900/30 overflow-hidden group h-28">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={corner.jugada1.img} alt={`Esquema Córner ${num} 1`} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
                       <button
                         type="button"
                         onClick={() => handleImageDelete(num, 'jugada1')}
-                        className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-rose-600 shadow hover:bg-rose-50 hover:scale-105 transition-all"
+                        className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-rose-600 shadow hover:bg-rose-50 hover:scale-105 transition-all cursor-pointer"
                       >
                         <Trash2 className="h-4 w-4" />
                       </button>
@@ -303,12 +303,12 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
                     />
                     <label
                       htmlFor={`file_abp_${num}_jugada1`}
-                      className="flex w-full items-center justify-center gap-1.5 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900 px-3 py-2 text-xs font-bold text-slate-350 cursor-pointer transition-all"
+                      className="flex w-full items-center justify-center gap-1.5 rounded-xl border border-border bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 px-3 py-2 text-xs font-bold text-foreground cursor-pointer transition-all"
                     >
                       {uploading[`${num}_jugada1`] ? (
                         <Loader2 className="h-3.5 w-3.5 animate-spin text-primary" />
                       ) : (
-                        <Upload className="h-3.5 w-3.5 text-slate-500" />
+                        <Upload className="h-3.5 w-3.5 text-muted-text" />
                       )}
                       <span>{uploading[`${num}_jugada1`] ? 'Subiendo...' : 'Seleccionar archivo'}</span>
                     </label>
@@ -321,36 +321,36 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
                   value={corner.jugada1.detail}
                   onChange={(e) => handleFieldChange(num, 'jugada1', 'detail', e.target.value)}
                   placeholder="Detalle imagen 1..."
-                  className="w-full rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-blue resize-none transition-all"
+                  className="w-full rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold text-foreground placeholder:text-muted-text outline-none focus:border-primary resize-none transition-all"
                 />
 
                 {/* Video URL input */}
                 <div className="relative">
-                  <Video className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-600" />
+                  <Video className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-text" />
                   <input
                     type="text"
                     value={corner.jugada1.video}
                     onChange={(e) => handleFieldChange(num, 'jugada1', 'video', e.target.value)}
                     placeholder="URL Vimeo imagen 1..."
-                    className="w-full rounded-xl border border-slate-800 bg-slate-900/40 py-2.5 pl-9 pr-3 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-blue transition-all"
+                    className="w-full rounded-xl border border-border bg-background py-2 pl-9 pr-3 text-xs font-semibold text-foreground placeholder:text-muted-text outline-none focus:border-primary transition-all"
                   />
                 </div>
               </div>
 
               {/* JUGADA 2 */}
               <div className="space-y-3.5">
-                <span className="text-[9px] font-extrabold text-slate-400 block tracking-widest uppercase">JUGADA ALTERNATIVA</span>
+                <span className="text-[9px] font-black text-muted-text block tracking-widest uppercase">VARIANTE / JUGADA 2</span>
                 
                 {/* File upload */}
                 {corner.jugada2.img ? (
-                  <div className="relative rounded-xl border border-slate-800 bg-slate-900 overflow-hidden group h-24">
+                  <div className="relative rounded-xl border border-border bg-slate-50 dark:bg-slate-900/30 overflow-hidden group h-28">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={corner.jugada2.img} alt={`Esquema Córner ${num} 2`} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
                       <button
                         type="button"
                         onClick={() => handleImageDelete(num, 'jugada2')}
-                        className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-rose-600 shadow hover:bg-rose-50 hover:scale-105 transition-all"
+                        className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-rose-600 shadow hover:bg-rose-50 hover:scale-105 transition-all cursor-pointer"
                       >
                         <Trash2 className="h-4 w-4" />
                       </button>
@@ -368,12 +368,12 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
                     />
                     <label
                       htmlFor={`file_abp_${num}_jugada2`}
-                      className="flex w-full items-center justify-center gap-1.5 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900 px-3 py-2 text-xs font-bold text-slate-350 cursor-pointer transition-all"
+                      className="flex w-full items-center justify-center gap-1.5 rounded-xl border border-border bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 px-3 py-2 text-xs font-bold text-foreground cursor-pointer transition-all"
                     >
                       {uploading[`${num}_jugada2`] ? (
                         <Loader2 className="h-3.5 w-3.5 animate-spin text-primary" />
                       ) : (
-                        <Upload className="h-3.5 w-3.5 text-slate-500" />
+                        <Upload className="h-3.5 w-3.5 text-muted-text" />
                       )}
                       <span>{uploading[`${num}_jugada2`] ? 'Subiendo...' : 'Seleccionar archivo'}</span>
                     </label>
@@ -386,18 +386,18 @@ export default function ABPTab({ partido, showToast }: ABPTabProps) {
                   value={corner.jugada2.detail}
                   onChange={(e) => handleFieldChange(num, 'jugada2', 'detail', e.target.value)}
                   placeholder="Detalle imagen 2..."
-                  className="w-full rounded-xl border border-slate-800 bg-slate-900/40 px-3 py-2 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-blue resize-none transition-all"
+                  className="w-full rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold text-foreground placeholder:text-muted-text outline-none focus:border-primary resize-none transition-all"
                 />
 
                 {/* Video URL input */}
                 <div className="relative">
-                  <Video className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-600" />
+                  <Video className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-text" />
                   <input
                     type="text"
                     value={corner.jugada2.video}
                     onChange={(e) => handleFieldChange(num, 'jugada2', 'video', e.target.value)}
                     placeholder="URL Vimeo imagen 2..."
-                    className="w-full rounded-xl border border-slate-800 bg-slate-900/40 py-2.5 pl-9 pr-3 text-xs font-semibold text-slate-200 placeholder:text-slate-600 outline-none focus:border-primary-blue transition-all"
+                    className="w-full rounded-xl border border-border bg-background py-2 pl-9 pr-3 text-xs font-semibold text-foreground placeholder:text-muted-text outline-none focus:border-primary transition-all"
                   />
                 </div>
               </div>

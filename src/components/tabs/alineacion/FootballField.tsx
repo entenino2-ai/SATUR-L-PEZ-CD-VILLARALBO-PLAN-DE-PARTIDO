@@ -171,11 +171,11 @@ export default function FootballField({
                 relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full border-2 shadow-lg cursor-pointer
                 ${isLocal 
                   ? player 
-                    ? 'bg-primary-blue border-white/80' 
-                    : 'bg-white/10 border-white/40 border-dashed hover:bg-white/20' 
+                    ? 'bg-primary border-white' 
+                    : 'bg-white/15 border-white/50 border-dashed hover:bg-white/25' 
                   : player
-                    ? 'bg-red-600 border-white/80'
-                    : 'bg-white/10 border-white/40 border-dashed hover:bg-white/20 opacity-80'}
+                    ? 'bg-rose-600 border-white'
+                    : 'bg-rose-950/40 border-rose-300/50 border-dashed hover:bg-rose-900/50'}
               `}
               onClick={player ? () => onRemoveJugador(node.id) : undefined}
             >
@@ -184,10 +184,10 @@ export default function FootballField({
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={player.foto_url} alt="" className="w-full h-full rounded-full object-cover" />
                 ) : (
-                  <span className="text-[10px] md:text-xs font-black text-white">{getPlayerInitials(player.nombre)}</span>
+                  <span className="text-[10px] md:text-xs font-black text-white tracking-wider">{getPlayerInitials(player.nombre)}</span>
                 )
               ) : (
-                <span className={`text-[9px] md:text-[10px] font-black ${isLocal ? 'text-white/60' : 'text-white'}`}>{node.role}</span>
+                <span className="text-[9px] md:text-[10px] font-black text-white tracking-wider drop-shadow">{node.role}</span>
               )}
               
               {/* Tooltip on remove */}
