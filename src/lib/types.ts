@@ -20,6 +20,16 @@ export interface Jugador {
   año?: number; // Calculado en la vista de Supabase como la edad
 }
 
+export interface JugadorEquipo {
+  id: string;
+  equipo_id: string;
+  nombre: string;
+  demarcacion: DemarcacionType;
+  caracteristicas: string | null;
+  foto_url: string | null;
+  creado_en: string;
+}
+
 export interface Equipo {
   id: string;
   nombre: string;

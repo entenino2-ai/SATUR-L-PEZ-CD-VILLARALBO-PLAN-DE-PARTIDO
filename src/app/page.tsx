@@ -26,6 +26,7 @@ import PlayerCard, { getPositionConfig } from '../components/PlayerCard';
 import PlayerModal from '../components/PlayerModal';
 import TeamCard from '../components/TeamCard';
 import TeamModal from '../components/TeamModal';
+import TeamPlayersModal from '../components/TeamPlayersModal';
 import PartidoList from '../components/PartidoList';
 import PartidoDetail from '../components/PartidoDetail';
 
@@ -87,6 +88,7 @@ export default function DashboardPage() {
   // Modals
   const [isPlayerModalOpen, setIsPlayerModalOpen] = useState(false);
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false);
+  const [isTeamPlayersModalOpen, setIsTeamPlayersModalOpen] = useState(false);
   const [selectedPlayer, setSelectedPlayer] = useState<Jugador | null>(null);
   const [selectedTeam, setSelectedTeam] = useState<Equipo | null>(null);
   
@@ -595,6 +597,10 @@ export default function DashboardPage() {
                         setIsTeamModalOpen(true);
                       }}
                       onDelete={handleDeleteTeam}
+                      onViewPlayers={(t) => {
+                        setSelectedTeam(t);
+                        setIsTeamPlayersModalOpen(true);
+                      }}
                     />
                   ))}
                 </div>
@@ -751,6 +757,15 @@ export default function DashboardPage() {
         }}
         team={selectedTeam}
         onSave={handleSaveTeam}
+      />
+
+      <TeamPlayersModal
+        isOpen={isTeamPlayersModalOpen}
+        onClose={() => {
+          setIsTeamPlayersModalOpen(false);
+          setSelectedTeam(null);
+        }}
+        team={selectedTeam}
       />
     </div>
   );

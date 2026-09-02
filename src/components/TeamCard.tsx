@@ -8,9 +8,10 @@ interface TeamCardProps {
   team: Equipo;
   onEdit: (team: Equipo) => void;
   onDelete: (id: string) => void;
+  onViewPlayers?: (team: Equipo) => void;
 }
 
-export default function TeamCard({ team, onEdit, onDelete }: TeamCardProps) {
+export default function TeamCard({ team, onEdit, onDelete, onViewPlayers }: TeamCardProps) {
   // Get initials for team shield fallback
   const getInitials = (name: string) => {
     return name
@@ -38,7 +39,14 @@ export default function TeamCard({ team, onEdit, onDelete }: TeamCardProps) {
   };
 
   return (
-    <div className="group relative flex items-center justify-between rounded-2xl border border-border bg-card p-4.5 shadow-sm transition-all duration-300 hover:border-primary/30 hover:shadow-md dark:shadow-slate-900/10">
+    <div 
+      className={`group relative flex items-center justify-between rounded-2xl border border-border bg-card p-4.5 shadow-sm transition-all duration-300 hover:border-primary/30 hover:shadow-md dark:shadow-slate-900/10 ${onViewPlayers ? 'cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50' : ''}`}
+      onClick={() => {
+        if (onViewPlayers) {
+          onViewPlayers(team);
+        }
+      }}
+    >
       
       {/* Decorative side accent for the main club */}
       {isCDVillaralbo && (
@@ -83,9 +91,24 @@ export default function TeamCard({ team, onEdit, onDelete }: TeamCardProps) {
       </div>
 
       {/* CRUD Action Buttons */}
-      <div className="flex gap-1.5">
+      <div className="flex gap-1.5 z-10">
+        {onViewPlayers && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onViewPlayers(team);
+            }}
+            className="flex h-9 items-center justify-center gap-1.5 rounded-xl border border-border bg-slate-50 px-3 text-slate-700 hover:bg-primary hover:text-primary-foreground hover:border-primary dark:bg-slate-800/40 dark:text-slate-300 transition-all duration-200"
+            title="Ver Jugadores"
+          >
+            <span className="text-xs font-bold">Jugadores</span>
+          </button>
+        )}
         <button
-          onClick={() => onEdit(team)}
+          onClick={(e) => {
+            e.stopPropagation();
+            onEdit(team);
+          }}
           className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-700 hover:bg-slate-100 hover:text-primary dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-primary transition-all duration-200"
           title="Editar"
         >
@@ -93,13 +116,18 @@ export default function TeamCard({ team, onEdit, onDelete }: TeamCardProps) {
         </button>
 
         {/* Don't allow deletion of CD Villaralbo main team for safety, but allow deleting other rival teams */}
-        <button
-          onClick={() => onDelete(team.id)}
-          className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-500 hover:bg-rose-50 hover:text-primary-blue dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-rose-950/20 dark:hover:text-primary-blue transition-all duration-200"
-          title="Eliminar"
-        >
-          <Trash2 className="h-4 w-4" />
-        </button>
+        {!isCDVillaralbo && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onDelete(team.id);
+            }}
+            className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-slate-50 text-slate-500 hover:bg-rose-50 hover:text-primary-blue dark:bg-slate-800/40 dark:text-slate-300 dark:hover:bg-rose-950/20 dark:hover:text-primary-blue transition-all duration-200"
+            title="Eliminar"
+          >
+            <Trash2 className="h-4 w-4" />
+          </button>
+        )}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Sparkles, Save, Eye, EyeOff, Loader2 } from 'lucide-react';
+import { Sparkles, Save, Eye, EyeOff, Loader2, Users } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
-import { Partido, Jugador, DemarcacionType } from '../../lib/types';
+import { Partido, Jugador, JugadorEquipo, DemarcacionType } from '../../lib/types';
 import FootballField from './alineacion/FootballField';
 import TacticalAIPanel from './alineacion/TacticalAIPanel';
 
@@ -36,28 +36,37 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
 
   // Players State
   const [plantilla, setPlantilla] = useState<Jugador[]>([]);
+  const [plantillaRival, setPlantillaRival] = useState<JugadorEquipo[]>([]);
   
   // UI State
   const [showAIPanel, setShowAIPanel] = useState(false);
+  const [activeSidebarTab, setActiveSidebarTab] = useState<'local' | 'rival'>('local');
+
+  // Determine which team is the rival
+  const isVillaralboLocal = partido.equipo_local?.nombre?.toLowerCase().includes('villaralbo') ?? true;
+  const rivalId = isVillaralboLocal ? partido.equipo_visitante_id : partido.equipo_local_id;
+  const rivalName = isVillaralboLocal 
+    ? (partido.equipo_visitante?.nombre || 'Rival')
+    : (partido.equipo_local?.nombre || 'Rival');
 
   useEffect(() => {
     const fetchDatos = async () => {
       try {
         setLoading(true);
-        // 1. Fetch Plantilla
-        const { data: playersData, error: playersError } = await supabase
-          .from('jugadores')
-          .select('*')
-          .order('dorsal', { ascending: true });
+        // 1. Fetch Plantillas
+        const [playersRes, rivalPlayersRes] = await Promise.all([
+          supabase.from('jugadores').select('*').order('dorsal', { ascending: true }),
+          supabase.from('jugadores_equipo').select('*').eq('equipo_id', rivalId)
+        ]);
         
-        if (playersError) {
-          if (playersError.code === '42P01') {
-             console.warn('Tabla jugadores no existe.');
-          } else {
-             throw playersError;
-          }
-        }
-        setPlantilla(playersData || []);
+        if (playersRes.error && playersRes.error.code !== '42P01') throw playersRes.error;
+        if (rivalPlayersRes.error && rivalPlayersRes.error.code !== '42P01') throw rivalPlayersRes.error;
+        
+        const playersData = playersRes.data || [];
+        const rivalPlayersData = rivalPlayersRes.data || [];
+        
+        setPlantilla(playersData);
+        setPlantillaRival(rivalPlayersData);
 
         // 2. Fetch Alineacion
         const { data: alineacionData, error: alingError } = await supabase
@@ -87,7 +96,10 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
           
           Object.keys(mapping).forEach(posId => {
             const pid = mapping[posId];
-            const pObj = (playersData || []).find(p => p.id === pid);
+            let pObj: any = playersData.find(p => p.id === pid);
+            if (!pObj) {
+              pObj = rivalPlayersData.find(p => p.id === pid);
+            }
             if (pObj) hydrated[posId] = pObj;
           });
           
@@ -150,13 +162,16 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
     showToast('Informe IA guardado temporalmente. Pulsa Guardar Alineación para consolidar.', 'success');
   };
 
-  const onDragStart = (e: React.DragEvent, player: Jugador) => {
+  const onDragStart = (e: React.DragEvent, player: Jugador | JugadorEquipo) => {
     e.dataTransfer.setData('playerId', player.id);
     e.dataTransfer.effectAllowed = 'copy';
   };
 
   const onDropJugador = (posId: string, playerId: string) => {
-    const player = plantilla.find(p => p.id === playerId);
+    let player: any = plantilla.find(p => p.id === playerId);
+    if (!player) {
+      player = plantillaRival.find(p => p.id === playerId);
+    }
     if (!player) return;
 
     setJugadoresAlineados(prev => {
@@ -179,12 +194,17 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
     });
   };
 
-  const jugadoresDisponibles = useMemo(() => {
+  const { disponiblesLocal, disponiblesRival } = useMemo(() => {
     const placedIds = Object.values(jugadoresAlineados).map(p => p.id);
-    return plantilla
+    const filterAndSort = (arr: any[]) => arr
       .filter(p => !placedIds.includes(p.id))
-      .sort((a, b) => ORDEN_DEMARCACION[a.demarcacion] - ORDEN_DEMARCACION[b.demarcacion]);
-  }, [plantilla, jugadoresAlineados]);
+      .sort((a, b) => ((ORDEN_DEMARCACION as Record<string, number>)[a.demarcacion] || 99) - ((ORDEN_DEMARCACION as Record<string, number>)[b.demarcacion] || 99));
+      
+    return {
+      disponiblesLocal: filterAndSort(plantilla),
+      disponiblesRival: filterAndSort(plantillaRival)
+    };
+  }, [plantilla, plantillaRival, jugadoresAlineados]);
 
   if (loading) {
     return (
@@ -264,7 +284,7 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
         {/* Legend */}
         <div className="flex items-center gap-4 px-2 text-[10px] font-bold">
           <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full bg-primary-blue"></div> CD Villaralbo ({formacionLocal})</div>
-          {mostrarRival && <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full bg-primary-blue opacity-80"></div> Rival ({formacionRival})</div>}
+          {mostrarRival && <div className="flex items-center gap-1.5"><div className="w-2.5 h-2.5 rounded-full bg-primary-blue opacity-80"></div> {rivalName} ({formacionRival})</div>}
         </div>
 
         {/* Field */}
@@ -275,28 +295,53 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
           jugadoresAlineados={jugadoresAlineados}
           onDropJugador={onDropJugador}
           onRemoveJugador={onRemoveJugador}
+          rivalName={rivalName}
         />
 
       </div>
 
       {/* RIGHT: Players Sidebar */}
       <div className="w-full lg:w-72 flex flex-col gap-4">
-        <div className="rounded-xl border border-border bg-card p-4 shadow-sm flex items-center justify-between">
-          <h3 className="text-sm font-black uppercase text-foreground">Jugadores</h3>
-          <span className="text-[10px] font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded-lg text-muted-text">
-            {Object.keys(jugadoresAlineados).length} / 11
-          </span>
+        <div className="rounded-xl border border-border bg-card p-2 shadow-sm flex items-center justify-between">
+          <div className="flex bg-slate-100 dark:bg-slate-900 rounded-lg p-1 w-full relative">
+            <div
+              className={`absolute top-1 bottom-1 w-[calc(50%-4px)] bg-white dark:bg-slate-800 rounded-md shadow-sm transition-transform duration-300 ${
+                activeSidebarTab === 'rival' ? 'translate-x-[calc(100%+8px)]' : 'translate-x-0'
+              }`}
+            ></div>
+            <button
+              onClick={() => setActiveSidebarTab('local')}
+              className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 text-xs font-bold rounded-md transition-colors relative z-10 ${
+                activeSidebarTab === 'local' ? 'text-foreground' : 'text-slate-500 hover:text-foreground'
+              }`}
+            >
+              CD Villaralbo
+            </button>
+            <button
+              onClick={() => setActiveSidebarTab('rival')}
+              className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 text-xs font-bold rounded-md transition-colors relative z-10 truncate px-2 ${
+                activeSidebarTab === 'rival' ? 'text-foreground' : 'text-slate-500 hover:text-foreground'
+              }`}
+              title={rivalName}
+            >
+              {rivalName}
+            </button>
+          </div>
         </div>
 
         <div className="flex-1 rounded-xl border border-border bg-card shadow-sm overflow-hidden flex flex-col">
-          <div className="p-3 bg-slate-50 dark:bg-slate-900/50 border-b border-border text-xs font-semibold text-muted-text text-center">
-            Arrastra jugadores al campo
+          <div className="p-3 bg-slate-50 dark:bg-slate-900/50 border-b border-border text-xs font-semibold text-muted-text text-center flex justify-between items-center">
+            <span>Arrastra al campo</span>
+            <span className="text-[10px] font-bold px-2 py-0.5 bg-slate-200 dark:bg-slate-800 rounded-md text-foreground">
+              {Object.keys(jugadoresAlineados).length} / 22
+            </span>
           </div>
           
           <div className="flex-1 overflow-y-auto p-3 space-y-4">
             {/* Group by Demarcacion */}
             {(Object.keys(ORDEN_DEMARCACION) as DemarcacionType[]).map(demarcacion => {
-              const playersInGroup = jugadoresDisponibles.filter(p => p.demarcacion === demarcacion);
+              const listToUse = activeSidebarTab === 'local' ? disponiblesLocal : disponiblesRival;
+              const playersInGroup = listToUse.filter((p: any) => p.demarcacion === demarcacion);
               if (playersInGroup.length === 0) return null;
               
               return (
@@ -317,12 +362,17 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
                           <img src={player.foto_url} alt="" className="w-8 h-8 rounded-full object-cover border border-border shadow-sm group-hover:scale-105 transition-transform" />
                         ) : (
                           <div className="flex w-8 h-8 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 border border-border text-[9px] font-black">
-                            {player.nombre.split(' ').slice(0,2).map(w=>w[0]).join('')}
+                            {player.nombre.split(' ').slice(0,2).map((w: string)=>w[0]).join('')}
                           </div>
                         )}
                         <div className="flex-1 min-w-0">
                           <p className="text-xs font-bold text-foreground truncate">{player.nombre}</p>
-                          <p className="text-[9px] text-muted-text">Forma: {player.forma}%</p>
+                          {'forma' in player && (
+                            <p className="text-[9px] text-muted-text">Forma: {player.forma}%</p>
+                          )}
+                          {'caracteristicas' in player && player.caracteristicas && (
+                            <p className="text-[9px] text-muted-text truncate">{player.caracteristicas}</p>
+                          )}
                         </div>
                       </div>
                     ))}

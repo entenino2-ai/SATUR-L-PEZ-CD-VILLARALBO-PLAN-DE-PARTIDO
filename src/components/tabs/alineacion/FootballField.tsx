@@ -79,6 +79,7 @@ interface FootballFieldProps {
   jugadoresAlineados: Record<string, any>; // mapping pos_id -> player
   onDropJugador: (posId: string, playerId: string) => void;
   onRemoveJugador: (posId: string) => void;
+  rivalName?: string;
 }
 
 export default function FootballField({
@@ -87,7 +88,8 @@ export default function FootballField({
   mostrarRival,
   jugadoresAlineados,
   onDropJugador,
-  onRemoveJugador
+  onRemoveJugador,
+  rivalName
 }: FootballFieldProps) {
   
   const nodesLocal = (FORMATIONS[formacionLocal] || FORMATIONS['4-3-3']).map((n, i) => ({
@@ -160,8 +162,8 @@ export default function FootballField({
             key={node.id}
             className="absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group transition-all duration-300"
             style={{ left: `${node.x}%`, top: `${node.y}%`, zIndex: isLocal ? 10 : 5 }}
-            onDragOver={isLocal ? handleDragOver : undefined}
-            onDrop={isLocal ? (e) => handleDrop(e, node.id) : undefined}
+            onDragOver={handleDragOver}
+            onDrop={(e) => handleDrop(e, node.id)}
           >
             {/* The Circle */}
             <div 
@@ -171,9 +173,11 @@ export default function FootballField({
                   ? player 
                     ? 'bg-primary-blue border-white/80' 
                     : 'bg-white/10 border-white/40 border-dashed hover:bg-white/20' 
-                  : 'bg-primary-blue border-white/50 opacity-80'}
+                  : player
+                    ? 'bg-red-600 border-white/80'
+                    : 'bg-white/10 border-white/40 border-dashed hover:bg-white/20 opacity-80'}
               `}
-              onClick={isLocal && player ? () => onRemoveJugador(node.id) : undefined}
+              onClick={player ? () => onRemoveJugador(node.id) : undefined}
             >
               {player ? (
                 player.foto_url ? (
@@ -187,16 +191,16 @@ export default function FootballField({
               )}
               
               {/* Tooltip on remove */}
-              {isLocal && player && (
-                <div className="absolute -top-8 bg-black/80 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none">
+              {player && (
+                <div className="absolute -top-8 bg-black/80 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none z-20">
                   Click para quitar
                 </div>
               )}
             </div>
             
             {/* Player Name below circle */}
-            <div className="mt-1 bg-black/60 px-1.5 py-0.5 rounded text-[9px] md:text-[10px] font-bold text-white whitespace-nowrap max-w-[80px] truncate text-center backdrop-blur-sm border border-white/10">
-              {player ? player.nombre.split(' ')[0] : isLocal ? 'Arrastra aquí' : 'Rival'}
+            <div className="mt-1 bg-black/60 px-1.5 py-0.5 rounded text-[9px] md:text-[10px] font-bold text-white whitespace-nowrap max-w-[80px] truncate text-center backdrop-blur-sm border border-white/10 relative z-20">
+              {player ? player.nombre.split(' ')[0] : (isLocal ? 'Arrastra aquí' : (rivalName || 'Rival'))}
             </div>
           </div>
         )
