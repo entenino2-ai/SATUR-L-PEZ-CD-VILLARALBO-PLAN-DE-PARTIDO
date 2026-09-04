@@ -51,7 +51,8 @@ const CD_VILLARALBO_SEED_PLAYERS: Omit<Jugador, 'id' | 'creado_en'>[] = [
   { nombre: 'Cristian Tomás Lupidio', dorsal: 19, demarcacion: 'Mediocentro', fecha_nacimiento: '1999-02-28', forma: 88, foto_url: '/players/dorsal_19_tomi.png' },
   { nombre: 'Miguel Blanco Merino', dorsal: 21, demarcacion: 'Interior', fecha_nacimiento: '2002-05-09', forma: 87, foto_url: '/players/dorsal_21_miguel_b.png' },
   { nombre: 'William', dorsal: 22, demarcacion: 'Delantero', fecha_nacimiento: '2001-11-04', forma: 89, foto_url: '/players/dorsal_22_william.png' },
-  { nombre: 'Raúl Muñoz Puelles', dorsal: 23, demarcacion: 'Defensa Lateral', fecha_nacimiento: '2001-06-19', forma: 88, foto_url: '/players/dorsal_23_raul_m.png' }
+  { nombre: 'Raúl Muñoz Puelles', dorsal: 23, demarcacion: 'Defensa Lateral', fecha_nacimiento: '2001-06-19', forma: 88, foto_url: '/players/dorsal_23_raul_m.png' },
+  { nombre: 'Kassim Moumouni', dorsal: 25, demarcacion: 'Defensa Central', fecha_nacimiento: '2006-01-10', forma: 100, foto_url: '/players/dorsal_25_kassim.png' }
 ];
 
 const SEED_TEAMS = [
