@@ -30,28 +30,28 @@ import TeamPlayersModal from '../components/TeamPlayersModal';
 import PartidoList from '../components/PartidoList';
 import PartidoDetail from '../components/PartidoDetail';
 
-// Mock list of CD Villaralbo players to seed database
+// Plantilla oficial del CD Villaralbo 26/27 para inicialización
 const CD_VILLARALBO_SEED_PLAYERS: Omit<Jugador, 'id' | 'creado_en'>[] = [
-  { nombre: 'Miguel Ángel Ramos', dorsal: 1, demarcacion: 'Portero', fecha_nacimiento: '1995-04-12', forma: 95, foto_url: null },
-  { nombre: 'Carlos Ramos', dorsal: 4, demarcacion: 'Defensa Central', fecha_nacimiento: '1994-11-03', forma: 92, foto_url: null },
-  { nombre: 'Héctor Gómez', dorsal: 5, demarcacion: 'Defensa Central', fecha_nacimiento: '1998-05-18', forma: 88, foto_url: null },
-  { nombre: 'Jorge González', dorsal: 2, demarcacion: 'Defensa Lateral', fecha_nacimiento: '2000-02-14', forma: 85, foto_url: null },
-  { nombre: 'Miguel Mazariegos', dorsal: 3, demarcacion: 'Defensa Lateral', fecha_nacimiento: '2001-09-07', forma: 90, foto_url: null },
-  { nombre: 'Raúl Valero', dorsal: 6, demarcacion: 'Mediocentro', fecha_nacimiento: '1996-01-20', forma: 96, foto_url: null },
-  { nombre: 'Javi Borrego', dorsal: 7, demarcacion: 'Extremo', fecha_nacimiento: '1997-03-24', forma: 95, foto_url: null },
-  { nombre: 'Juanan del Valle', dorsal: 8, demarcacion: 'Interior', fecha_nacimiento: '1996-10-15', forma: 91, foto_url: null },
-  { nombre: 'Chechi Blanco', dorsal: 9, demarcacion: 'Delantero', fecha_nacimiento: '1993-08-14', forma: 98, foto_url: null },
-  { nombre: 'Rubén Rodríguez', dorsal: 10, demarcacion: 'Mediapunta', fecha_nacimiento: '1997-06-12', forma: 94, foto_url: null },
-  { nombre: 'Luis Rivas', dorsal: 11, demarcacion: 'Extremo', fecha_nacimiento: '2001-01-19', forma: 92, foto_url: null },
-  { nombre: 'Alejandro Sanz', dorsal: 13, demarcacion: 'Portero', fecha_nacimiento: '2002-08-25', forma: 80, foto_url: null },
-  { nombre: 'Andrés Fraile', dorsal: 14, demarcacion: 'Mediocentro', fecha_nacimiento: '2002-12-05', forma: 83, foto_url: null },
-  { nombre: 'David De la Iglesia', dorsal: 15, demarcacion: 'Defensa Central', fecha_nacimiento: '2003-03-22', forma: 78, foto_url: null },
-  { nombre: 'Samuel Prieto', dorsal: 16, demarcacion: 'Interior', fecha_nacimiento: '2004-02-28', forma: 75, foto_url: null },
-  { nombre: 'Hugo Herrero', dorsal: 17, demarcacion: 'Delantero', fecha_nacimiento: '2003-05-10', forma: 81, foto_url: null },
-  { nombre: 'Adrián López', dorsal: 18, demarcacion: 'Mediapunta', fecha_nacimiento: '2000-11-20', forma: 82, foto_url: null },
-  { nombre: 'Dani Hernando', dorsal: 19, demarcacion: 'Extremo', fecha_nacimiento: '2002-06-30', forma: 86, foto_url: null },
-  { nombre: 'Manuel Domínguez', dorsal: 21, demarcacion: 'Delantero', fecha_nacimiento: '2004-09-15', forma: 79, foto_url: null },
-  { nombre: 'Sergio Ledesma', dorsal: 22, demarcacion: 'Defensa Lateral', fecha_nacimiento: '1999-07-31', forma: 84, foto_url: null }
+  { nombre: 'Miguel del Río Rodríguez', dorsal: 1, demarcacion: 'Portero', fecha_nacimiento: '1991-02-20', forma: 95, foto_url: '/players/dorsal_1_miguel.png' },
+  { nombre: 'Amon Ange Roland Yohane', dorsal: 2, demarcacion: 'Defensa Lateral', fecha_nacimiento: '1998-04-10', forma: 90, foto_url: '/players/dorsal_2_ange.png' },
+  { nombre: 'Konate Varane Ibrahim', dorsal: 4, demarcacion: 'Defensa Central', fecha_nacimiento: '1995-07-22', forma: 92, foto_url: '/players/dorsal_4_konate.png' },
+  { nombre: 'Diego González Cepeda', dorsal: 5, demarcacion: 'Defensa Central', fecha_nacimiento: '1999-11-15', forma: 88, foto_url: '/players/dorsal_5_cepeda.png' },
+  { nombre: 'Moussa Diarra Traoré', dorsal: 6, demarcacion: 'Defensa Lateral', fecha_nacimiento: '2001-03-18', forma: 89, foto_url: '/players/dorsal_6_moussa.png' },
+  { nombre: 'Daniel Peralta Arroyo', dorsal: 7, demarcacion: 'Extremo', fecha_nacimiento: '2000-05-12', forma: 91, foto_url: '/players/dorsal_7_peralta.png' },
+  { nombre: 'José María Ortega Parejo', dorsal: 8, demarcacion: 'Mediocentro', fecha_nacimiento: '1997-09-25', forma: 94, foto_url: '/players/dorsal_8_jose_maria.png' },
+  { nombre: 'Rubén Blanco Rodríguez', dorsal: 9, demarcacion: 'Delantero', fecha_nacimiento: '1993-06-14', forma: 96, foto_url: '/players/dorsal_9_rubo.png' },
+  { nombre: 'Ángel Esteban Ruiz', dorsal: 10, demarcacion: 'Mediapunta', fecha_nacimiento: '1998-12-03', forma: 93, foto_url: '/players/dorsal_10_angel_e.png' },
+  { nombre: 'Emmanuel Tomás Manero', dorsal: 11, demarcacion: 'Extremo', fecha_nacimiento: '1999-08-19', forma: 90, foto_url: '/players/dorsal_11_emmanuel.png' },
+  { nombre: 'Iker Rodríguez', dorsal: 13, demarcacion: 'Portero', fecha_nacimiento: '2003-02-17', forma: 86, foto_url: '/players/dorsal_13_iker.png' },
+  { nombre: 'Ismael García Antolín', dorsal: 14, demarcacion: 'Mediocentro', fecha_nacimiento: '2001-10-30', forma: 88, foto_url: '/players/dorsal_14_isma.png' },
+  { nombre: 'Jorge Sanabria Belloso', dorsal: 15, demarcacion: 'Interior', fecha_nacimiento: '2000-01-15', forma: 87, foto_url: '/players/dorsal_15_sana.png' },
+  { nombre: 'Romario García Salinas', dorsal: 16, demarcacion: 'Extremo', fecha_nacimiento: '1996-07-08', forma: 90, foto_url: '/players/dorsal_16_romario.png' },
+  { nombre: 'Theodore Goore', dorsal: 17, demarcacion: 'Delantero', fecha_nacimiento: '1998-04-21', forma: 92, foto_url: '/players/dorsal_17_theo_goore.png' },
+  { nombre: 'Alejandro Navarro Carrasquero', dorsal: 18, demarcacion: 'Defensa Lateral', fecha_nacimiento: '2000-08-11', forma: 89, foto_url: '/players/dorsal_18_alex_n.png' },
+  { nombre: 'Cristian Tomás Lupidio', dorsal: 19, demarcacion: 'Mediocentro', fecha_nacimiento: '1999-02-28', forma: 88, foto_url: '/players/dorsal_19_tomi.png' },
+  { nombre: 'Miguel Blanco Merino', dorsal: 21, demarcacion: 'Interior', fecha_nacimiento: '2002-05-09', forma: 87, foto_url: '/players/dorsal_21_miguel_b.png' },
+  { nombre: 'William', dorsal: 22, demarcacion: 'Delantero', fecha_nacimiento: '2001-11-04', forma: 89, foto_url: '/players/dorsal_22_william.png' },
+  { nombre: 'Raúl Muñoz Puelles', dorsal: 23, demarcacion: 'Defensa Lateral', fecha_nacimiento: '2001-06-19', forma: 88, foto_url: '/players/dorsal_23_raul_m.png' }
 ];
 
 const SEED_TEAMS = [
