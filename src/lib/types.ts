@@ -111,7 +111,8 @@ export interface AlineacionPartido {
   formacion_local: string;
   formacion_rival: string;
   mostrar_rival: boolean;
-  jugadores_11: Record<string, string>; // { "posicion_index_o_id": "jugador_id" }
+  jugadores_11: Record<string, any>; // { "local-0": "jugador_id", "_customPositions": { ... } }
+  posiciones_custom?: Record<string, { x: number; y: number }>;
   analisis_ia: string | null;
   creado_en?: string;
 }
