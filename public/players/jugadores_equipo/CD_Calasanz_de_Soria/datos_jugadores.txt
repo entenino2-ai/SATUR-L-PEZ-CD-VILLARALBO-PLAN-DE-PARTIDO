@@ -1,0 +1,150 @@
+================================================================================
+PLANTILLA Y DATOS DE JUGADORES - C.D. CALASANZ DE SORIA
+================================================================================
+Carpeta Storage: jugadores_equipo/CD_Calasanz_de_Soria/
+Total Jugadores: 24
+Fecha: 30/9/2026
+
+• [Dorsal  1] MÍNGUEZ BRAVO, FERNANDO
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 1 | Titular | Portero
+  - Archivo Foto: 01_MINGUEZ_BRAVO__FERNANDO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/01_MINGUEZ_BRAVO__FERNANDO.png
+
+• [Dorsal  5] MIGUEL CHICO, ALVARO
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 5 | Titular | Central
+  - Archivo Foto: 05_MIGUEL_CHICO__ALVARO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/05_MIGUEL_CHICO__ALVARO.png
+
+• [Dorsal  6] MARTINEZ SANZ, ADRIAN
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 6 | Titular | Central / Lateral
+  - Archivo Foto: 06_MARTINEZ_SANZ__ADRIAN.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/06_MARTINEZ_SANZ__ADRIAN.png
+
+• [Dorsal  8] GARCIA ORDEN, EDUARDO
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 8 | Titular | Mediocentro
+  - Archivo Foto: 08_GARCIA_ORDEN__EDUARDO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/08_GARCIA_ORDEN__EDUARDO.png
+
+• [Dorsal 10] NIETO VELA, DANIEL
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 10 | Titular | Mediapunta / Organizador
+  - Archivo Foto: 10_NIETO_VELA__DANIEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/10_NIETO_VELA__DANIEL.png
+
+• [Dorsal 11] BACIERO ALVAREZ, ASIER
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 11 | Titular | Extremo
+  - Archivo Foto: 11_BACIERO_ALVAREZ__ASIER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/11_BACIERO_ALVAREZ__ASIER.png
+
+• [Dorsal 12] MATEO PEREZ, DIEGO
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 12 | Titular | Lateral
+  - Archivo Foto: 12_MATEO_PEREZ__DIEGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/12_MATEO_PEREZ__DIEGO.png
+
+• [Dorsal 14] GARCIA SAUKO, DANIEL
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 14 | Titular | Mediocentro
+  - Archivo Foto: 14_GARCIA_SAUKO__DANIEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/14_GARCIA_SAUKO__DANIEL.png
+
+• [Dorsal 16] DOMINGUEZ VELA, RODRIGO
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 16 | Titular | Extremo / Delantero
+  - Archivo Foto: 16_DOMINGUEZ_VELA__RODRIGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/16_DOMINGUEZ_VELA__RODRIGO.png
+
+• [Dorsal 21] SANZ MARTINEZ, PABLO
+  - Demarcación: Interior
+  - Perfil/Características: Dorsal 21 | Titular | Interior
+  - Archivo Foto: 21_SANZ_MARTINEZ__PABLO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/21_SANZ_MARTINEZ__PABLO.png
+
+• [Dorsal 22] ACEBES HUERTA, EDGAR
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 22 | Titular | Delantero Centro
+  - Archivo Foto: 22_ACEBES_HUERTA__EDGAR.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/22_ACEBES_HUERTA__EDGAR.png
+
+• [Dorsal 33] GARRIDO GONZALEZ, RAUL
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 33 | Suplente | Portero
+  - Archivo Foto: 33_GARRIDO_GONZALEZ__RAUL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/33_GARRIDO_GONZALEZ__RAUL.png
+
+• [Dorsal  4] DOMINGO CAMPOS, ASIER
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 4 | Suplente | Lateral
+  - Archivo Foto: 04_DOMINGO_CAMPOS__ASIER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/04_DOMINGO_CAMPOS__ASIER.png
+
+• [Dorsal  7] AGUSTÍN DOMINGO, ALEJANDRO
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 7 | Suplente | Extremo
+  - Archivo Foto: 07_AGUSTIN_DOMINGO__ALEJANDRO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/07_AGUSTIN_DOMINGO__ALEJANDRO.png
+
+• [Dorsal  9] RUBIO URCHAGA, HECTOR
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 9 | Suplente | Delantero
+  - Archivo Foto: 09_RUBIO_URCHAGA__HECTOR.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/09_RUBIO_URCHAGA__HECTOR.png
+
+• [Dorsal 17] MADRIGAL DUARTE, SERGIO
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 17 | Suplente | Delantero
+  - Archivo Foto: 17_MADRIGAL_DUARTE__SERGIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/17_MADRIGAL_DUARTE__SERGIO.png
+
+• [Dorsal 20] CORDEIRO BARTOLOME, DIEGO
+  - Demarcación: Interior
+  - Perfil/Características: Dorsal 20 | Suplente | Interior / Mediocentro
+  - Archivo Foto: 20_CORDEIRO_BARTOLOME__DIEGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/20_CORDEIRO_BARTOLOME__DIEGO.png
+
+• [Dorsal 23] GÓMEZ GARCÍA, SERGIO
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 23 | Suplente | Mediapunta
+  - Archivo Foto: 23_GOMEZ_GARCIA__SERGIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/23_GOMEZ_GARCIA__SERGIO.png
+
+• [Dorsal 24] NIÑO RUIZ, IVAN
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 24 | Suplente | Central
+  - Archivo Foto: 24_NINO_RUIZ__IVAN.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/24_NINO_RUIZ__IVAN.png
+
+• [Dorsal --] CASCANTE RUIZ DE EGUINO, ADRIAN
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Defensa / Lateral | C.D. Calasanz de Soria
+  - Archivo Foto: Sin foto
+  - URL Pública: Sin URL
+
+• [Dorsal --] CATALINA DOMINGUEZ, OSCAR
+  - Demarcación: Mediocentro
+  - Perfil/Características: Mediocentro | C.D. Calasanz de Soria
+  - Archivo Foto: Sin foto
+  - URL Pública: Sin URL
+
+• [Dorsal --] MARTINEZ ANDRÉS, LUCAS
+  - Demarcación: Delantero
+  - Perfil/Características: Delantero | C.D. Calasanz de Soria
+  - Archivo Foto: Sin foto
+  - URL Pública: Sin URL
+
+• [Dorsal --] MELGAR ADAN, AARON
+  - Demarcación: Portero
+  - Perfil/Características: Portero | C.D. Calasanz de Soria
+  - Archivo Foto: Sin foto
+  - URL Pública: Sin URL
+
+• [Dorsal --] PÉREZ CAVERO, ADÁN
+  - Demarcación: Extremo
+  - Perfil/Características: Extremo / Delantero | C.D. Calasanz de Soria
+  - Archivo Foto: Sin foto
+  - URL Pública: Sin URL

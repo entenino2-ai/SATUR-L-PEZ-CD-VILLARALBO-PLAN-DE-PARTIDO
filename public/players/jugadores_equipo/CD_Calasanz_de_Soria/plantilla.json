@@ -1,0 +1,273 @@
+{
+  "equipo": "C.D. Calasanz de Soria",
+  "id_equipo": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+  "carpeta_storage": "jugadores_equipo/CD_Calasanz_de_Soria/",
+  "total_jugadores": 24,
+  "actualizado_en": "2026-09-30T11:20:33.091Z",
+  "plantilla": [
+    {
+      "id": "de5c94eb-62f4-455a-b276-decc921b4718",
+      "dorsal": 1,
+      "nombre": "MÍNGUEZ BRAVO, FERNANDO",
+      "demarcacion": "Portero",
+      "caracteristicas": "Dorsal 1 | Titular | Portero",
+      "foto_archivo": "01_MINGUEZ_BRAVO__FERNANDO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/01_MINGUEZ_BRAVO__FERNANDO.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "440adb67-9c82-4916-a33e-571e15e2a54c",
+      "dorsal": 5,
+      "nombre": "MIGUEL CHICO, ALVARO",
+      "demarcacion": "Defensa Central",
+      "caracteristicas": "Dorsal 5 | Titular | Central",
+      "foto_archivo": "05_MIGUEL_CHICO__ALVARO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/05_MIGUEL_CHICO__ALVARO.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "d0f50b0d-bad4-4d40-9010-2339792bb99b",
+      "dorsal": 6,
+      "nombre": "MARTINEZ SANZ, ADRIAN",
+      "demarcacion": "Defensa Central",
+      "caracteristicas": "Dorsal 6 | Titular | Central / Lateral",
+      "foto_archivo": "06_MARTINEZ_SANZ__ADRIAN.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/06_MARTINEZ_SANZ__ADRIAN.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "632d40a0-c7fc-4f26-955f-bfee6b011b67",
+      "dorsal": 8,
+      "nombre": "GARCIA ORDEN, EDUARDO",
+      "demarcacion": "Mediocentro",
+      "caracteristicas": "Dorsal 8 | Titular | Mediocentro",
+      "foto_archivo": "08_GARCIA_ORDEN__EDUARDO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/08_GARCIA_ORDEN__EDUARDO.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "f4b2ff8d-6388-416c-9fc8-8ed1de381f2b",
+      "dorsal": 10,
+      "nombre": "NIETO VELA, DANIEL",
+      "demarcacion": "Mediapunta",
+      "caracteristicas": "Dorsal 10 | Titular | Mediapunta / Organizador",
+      "foto_archivo": "10_NIETO_VELA__DANIEL.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/10_NIETO_VELA__DANIEL.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "14c3e9a6-53ea-479a-a79b-a22b05798272",
+      "dorsal": 11,
+      "nombre": "BACIERO ALVAREZ, ASIER",
+      "demarcacion": "Extremo",
+      "caracteristicas": "Dorsal 11 | Titular | Extremo",
+      "foto_archivo": "11_BACIERO_ALVAREZ__ASIER.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/11_BACIERO_ALVAREZ__ASIER.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "1884d52d-ddd9-4216-a652-2c286c61e4de",
+      "dorsal": 12,
+      "nombre": "MATEO PEREZ, DIEGO",
+      "demarcacion": "Defensa Lateral",
+      "caracteristicas": "Dorsal 12 | Titular | Lateral",
+      "foto_archivo": "12_MATEO_PEREZ__DIEGO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/12_MATEO_PEREZ__DIEGO.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "b69b2ae0-f440-4f93-9911-d80c4a72459b",
+      "dorsal": 14,
+      "nombre": "GARCIA SAUKO, DANIEL",
+      "demarcacion": "Mediocentro",
+      "caracteristicas": "Dorsal 14 | Titular | Mediocentro",
+      "foto_archivo": "14_GARCIA_SAUKO__DANIEL.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/14_GARCIA_SAUKO__DANIEL.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "3f3381e8-cad7-4833-8f40-011d46991f4c",
+      "dorsal": 16,
+      "nombre": "DOMINGUEZ VELA, RODRIGO",
+      "demarcacion": "Extremo",
+      "caracteristicas": "Dorsal 16 | Titular | Extremo / Delantero",
+      "foto_archivo": "16_DOMINGUEZ_VELA__RODRIGO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/16_DOMINGUEZ_VELA__RODRIGO.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "a50acac6-a9d3-4adf-9ed2-7f6d086d16f1",
+      "dorsal": 21,
+      "nombre": "SANZ MARTINEZ, PABLO",
+      "demarcacion": "Interior",
+      "caracteristicas": "Dorsal 21 | Titular | Interior",
+      "foto_archivo": "21_SANZ_MARTINEZ__PABLO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/21_SANZ_MARTINEZ__PABLO.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "bfe933b5-9b8b-47e0-930b-25277df6e150",
+      "dorsal": 22,
+      "nombre": "ACEBES HUERTA, EDGAR",
+      "demarcacion": "Delantero",
+      "caracteristicas": "Dorsal 22 | Titular | Delantero Centro",
+      "foto_archivo": "22_ACEBES_HUERTA__EDGAR.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/22_ACEBES_HUERTA__EDGAR.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "3b0de35c-7681-43e0-b84f-5eff5cd6b8d0",
+      "dorsal": 33,
+      "nombre": "GARRIDO GONZALEZ, RAUL",
+      "demarcacion": "Portero",
+      "caracteristicas": "Dorsal 33 | Suplente | Portero",
+      "foto_archivo": "33_GARRIDO_GONZALEZ__RAUL.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/33_GARRIDO_GONZALEZ__RAUL.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "b9db4fc8-07ad-4391-939b-f852cd7553ab",
+      "dorsal": 4,
+      "nombre": "DOMINGO CAMPOS, ASIER",
+      "demarcacion": "Defensa Lateral",
+      "caracteristicas": "Dorsal 4 | Suplente | Lateral",
+      "foto_archivo": "04_DOMINGO_CAMPOS__ASIER.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/04_DOMINGO_CAMPOS__ASIER.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "33751498-94b7-455a-a2d8-34a4462e232b",
+      "dorsal": 7,
+      "nombre": "AGUSTÍN DOMINGO, ALEJANDRO",
+      "demarcacion": "Extremo",
+      "caracteristicas": "Dorsal 7 | Suplente | Extremo",
+      "foto_archivo": "07_AGUSTIN_DOMINGO__ALEJANDRO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/07_AGUSTIN_DOMINGO__ALEJANDRO.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "57388e14-892f-4483-a3f2-0fb475090244",
+      "dorsal": 9,
+      "nombre": "RUBIO URCHAGA, HECTOR",
+      "demarcacion": "Delantero",
+      "caracteristicas": "Dorsal 9 | Suplente | Delantero",
+      "foto_archivo": "09_RUBIO_URCHAGA__HECTOR.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/09_RUBIO_URCHAGA__HECTOR.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "bcd8d21b-efec-4ce8-8776-e57ed2ac6f2e",
+      "dorsal": 17,
+      "nombre": "MADRIGAL DUARTE, SERGIO",
+      "demarcacion": "Delantero",
+      "caracteristicas": "Dorsal 17 | Suplente | Delantero",
+      "foto_archivo": "17_MADRIGAL_DUARTE__SERGIO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/17_MADRIGAL_DUARTE__SERGIO.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "d49c29ee-5f6c-4a6a-a907-7e042d32ab80",
+      "dorsal": 20,
+      "nombre": "CORDEIRO BARTOLOME, DIEGO",
+      "demarcacion": "Interior",
+      "caracteristicas": "Dorsal 20 | Suplente | Interior / Mediocentro",
+      "foto_archivo": "20_CORDEIRO_BARTOLOME__DIEGO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/20_CORDEIRO_BARTOLOME__DIEGO.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "70585ceb-0158-44cf-931b-c23aee0ba13c",
+      "dorsal": 23,
+      "nombre": "GÓMEZ GARCÍA, SERGIO",
+      "demarcacion": "Mediapunta",
+      "caracteristicas": "Dorsal 23 | Suplente | Mediapunta",
+      "foto_archivo": "23_GOMEZ_GARCIA__SERGIO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/23_GOMEZ_GARCIA__SERGIO.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "893eef5b-b784-4692-b9ca-617450157b7d",
+      "dorsal": 24,
+      "nombre": "NIÑO RUIZ, IVAN",
+      "demarcacion": "Defensa Central",
+      "caracteristicas": "Dorsal 24 | Suplente | Central",
+      "foto_archivo": "24_NINO_RUIZ__IVAN.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Calasanz_de_Soria/24_NINO_RUIZ__IVAN.png",
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "9164f358-2f34-41e9-b83c-db139e41da1f",
+      "dorsal": null,
+      "nombre": "CASCANTE RUIZ DE EGUINO, ADRIAN",
+      "demarcacion": "Defensa Lateral",
+      "caracteristicas": "Defensa / Lateral | C.D. Calasanz de Soria",
+      "foto_archivo": null,
+      "foto_url": null,
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "27e92ffa-4858-4141-97eb-2452980a5995",
+      "dorsal": null,
+      "nombre": "CATALINA DOMINGUEZ, OSCAR",
+      "demarcacion": "Mediocentro",
+      "caracteristicas": "Mediocentro | C.D. Calasanz de Soria",
+      "foto_archivo": null,
+      "foto_url": null,
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "b4dc2d10-84e5-4aef-bb31-878413d3ef10",
+      "dorsal": null,
+      "nombre": "MARTINEZ ANDRÉS, LUCAS",
+      "demarcacion": "Delantero",
+      "caracteristicas": "Delantero | C.D. Calasanz de Soria",
+      "foto_archivo": null,
+      "foto_url": null,
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "566d1354-1158-4c9e-aa61-85acbf67a2fd",
+      "dorsal": null,
+      "nombre": "MELGAR ADAN, AARON",
+      "demarcacion": "Portero",
+      "caracteristicas": "Portero | C.D. Calasanz de Soria",
+      "foto_archivo": null,
+      "foto_url": null,
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    },
+    {
+      "id": "23e0e249-1238-4505-8f0e-2052a56cfd11",
+      "dorsal": null,
+      "nombre": "PÉREZ CAVERO, ADÁN",
+      "demarcacion": "Extremo",
+      "caracteristicas": "Extremo / Delantero | C.D. Calasanz de Soria",
+      "foto_archivo": null,
+      "foto_url": null,
+      "equipo_id": "3a16a88d-dac1-4922-b297-9e14e42f9f30",
+      "equipo_nombre": "C.D. Calasanz de Soria"
+    }
+  ]
+}
