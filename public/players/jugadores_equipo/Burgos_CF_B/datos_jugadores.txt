@@ -1,0 +1,126 @@
+================================================================================
+PLANTILLA Y DATOS DE JUGADORES - BURGOS C.F. S.A.D. "B"
+================================================================================
+Carpeta Storage: jugadores_equipo/Burgos_CF_B/
+Total Jugadores: 20
+Fecha: 30/9/2026
+
+• [Dorsal  6] Álex Iker Alba Fernández Berridi
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 6 | Medio centro defensivo
+  - Archivo Foto: 06_Alex_Iker_Alba_Fernandez_Berridi.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/06_Alex_Iker_Alba_Fernandez_Berridi.png
+
+• [Dorsal  4] Ander Ibai Barck Pavón
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 4 | Centrocampista - Extremo zurdo
+  - Archivo Foto: 04_Ander_Ibai_Barck_Pavon.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/04_Ander_Ibai_Barck_Pavon.png
+
+• [Dorsal  3] Ayman Mustapha Rajjouani Mansri
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 3 | Central
+  - Archivo Foto: 03_Ayman_Mustapha_Rajjouani_Mansri.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/03_Ayman_Mustapha_Rajjouani_Mansri.png
+
+• [Dorsal 21] Cristian Torrelavid Moreno
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 21 | Centrocampista
+  - Archivo Foto: 21_Cristian_Torrelavid_Moreno.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/21_Cristian_Torrelavid_Moreno.png
+
+• [Dorsal  4] Daniel Ruiz Mayo
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 4 | Defensa
+  - Archivo Foto: 04_Daniel_Ruiz_Mayo.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/04_Daniel_Ruiz_Mayo.png
+
+• [Dorsal  3] David Hernaiz García
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 3 | Defensa / Lateral
+  - Archivo Foto: 03_David_Hernaiz_Garcia.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/03_David_Hernaiz_Garcia.png
+
+• [Dorsal  8] Diego González Presencio
+  - Demarcación: Interior
+  - Perfil/Características: Dorsal 8 | Mediocentro / Interior
+  - Archivo Foto: 08_Diego_Gonzalez_Presencio.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/08_Diego_Gonzalez_Presencio.png
+
+• [Dorsal 13] Diego González Presencio (P)
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 13 | Portero
+  - Archivo Foto: 13_Diego_Gonzalez_Presencio_P.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/13_Diego_Gonzalez_Presencio_P.png
+
+• [Dorsal 10] Ethan Ventosa González
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 10 | Delantero
+  - Archivo Foto: 10_Ethan_Ventosa_Gonzalez.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/10_Ethan_Ventosa_Gonzalez.png
+
+• [Dorsal 16] Héctor Royo Méndez
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 16 | Lateral derecho / Central
+  - Archivo Foto: 16_Hector_Royo_Mendez.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/16_Hector_Royo_Mendez.png
+
+• [Dorsal  6] Hugo Sedano Oca
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 6 | Centrocampista
+  - Archivo Foto: 06_Hugo_Sedano_Oca.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/06_Hugo_Sedano_Oca.png
+
+• [Dorsal  9] Irian Ribas Carrasco
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 9 | Delantero
+  - Archivo Foto: 09_Irian_Ribas_Carrasco.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/09_Irian_Ribas_Carrasco.png
+
+• [Dorsal 15] Iván Martínez Ruiz
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 15 | Centrocampista
+  - Archivo Foto: 15_Ivan_Martinez_Ruiz.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/15_Ivan_Martinez_Ruiz.png
+
+• [Dorsal  5] Javier Caño Vales
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 5 | Central
+  - Archivo Foto: 05_Javier_Cano_Vales.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/05_Javier_Cano_Vales.png
+
+• [Dorsal 21] Javier Tejedor Gómez
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 21 | Central
+  - Archivo Foto: 21_Javier_Tejedor_Gomez.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/21_Javier_Tejedor_Gomez.png
+
+• [Dorsal  7] Jesús Ares Maneiro
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 7 | Extremo zurdo por derecha
+  - Archivo Foto: 07_Jesus_Ares_Maneiro.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/07_Jesus_Ares_Maneiro.png
+
+• [Dorsal  1] Marc Monedero Sánchez
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 1 | Portero
+  - Archivo Foto: 01_Marc_Monedero_Sanchez.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/01_Marc_Monedero_Sanchez.png
+
+• [Dorsal 25] Marcos Riaño Puig
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 25 | Portero
+  - Archivo Foto: 25_Marcos_Riano_Puig.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/25_Marcos_Riano_Puig.png
+
+• [Dorsal 20] Pablo Sagredo García
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 20 | Delantero
+  - Archivo Foto: 20_Pablo_Sagredo_Garcia.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/20_Pablo_Sagredo_Garcia.png
+
+• [Dorsal 14] Sergio Romero Rubiño
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 14 | Centrocampista (Procedencia: CE Europa)
+  - Archivo Foto: 14_Sergio_Romero_Rubino.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Burgos_CF_B/14_Sergio_Romero_Rubino.png

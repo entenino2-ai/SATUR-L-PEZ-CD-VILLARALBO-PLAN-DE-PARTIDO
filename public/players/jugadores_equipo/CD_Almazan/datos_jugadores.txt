@@ -1,0 +1,126 @@
+================================================================================
+PLANTILLA Y DATOS DE JUGADORES - C.D. ALMAZÁN
+================================================================================
+Carpeta Storage: jugadores_equipo/CD_Almazan/
+Total Jugadores: 20
+Fecha: 30/9/2026
+
+• [Dorsal  5] CHECA MARINA, RAFAEL
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 5 | Titular | Central
+  - Archivo Foto: 05_CHECA_MARINA_RAFAEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/05_CHECA_MARINA_RAFAEL.png
+
+• [Dorsal 23] DELGADO ZAMORA, JORGE
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 23 | Suplente | Delantero
+  - Archivo Foto: 23_DELGADO_ZAMORA_JORGE.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/23_DELGADO_ZAMORA_JORGE.png
+
+• [Dorsal 20] ELVIRA RODRIGO, CARLOS
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 20 | Suplente | Portero
+  - Archivo Foto: 20_ELVIRA_RODRIGO_CARLOS.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/20_ELVIRA_RODRIGO_CARLOS.png
+
+• [Dorsal 10] GARCIA ALBITRE, JAVIER
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 10 | Titular | Mediapunta / Organizador
+  - Archivo Foto: 10_GARCIA_ALBITRE_JAVIER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/10_GARCIA_ALBITRE_JAVIER.png
+
+• [Dorsal  6] GIL MARCOS, MARCOS
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 6 | Titular | Central / Mediocentro
+  - Archivo Foto: 06_GIL_MARCOS_MARCOS.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/06_GIL_MARCOS_MARCOS.png
+
+• [Dorsal 19] JIMENEZ GARCIA, HUGO
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 19 | Suplente | Mediapunta
+  - Archivo Foto: 19_JIMENEZ_GARCIA_HUGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/19_JIMENEZ_GARCIA_HUGO.png
+
+• [Dorsal  1] MÁRQUEZ LACALLE, JAVIER
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 1 | Suplente | Portero
+  - Archivo Foto: 01_MARQUEZ_LACALLE_JAVIER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/01_MARQUEZ_LACALLE_JAVIER.png
+
+• [Dorsal 22] MARTINEZ BOUTEFEU, HUGO
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 22 | Titular | Delantero Centro
+  - Archivo Foto: 22_MARTINEZ_BOUTEFEU_HUGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/22_MARTINEZ_BOUTEFEU_HUGO.png
+
+• [Dorsal 14] MARTINEZ GARCIA, DANIEL
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 14 | Titular | Mediocentro
+  - Archivo Foto: 14_MARTINEZ_GARCIA_DANIEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/14_MARTINEZ_GARCIA_DANIEL.png
+
+• [Dorsal 15] MATA RODRIGO, YAGO
+  - Demarcación: Interior
+  - Perfil/Características: Dorsal 15 | Suplente | Interior / Mediocentro
+  - Archivo Foto: 15_MATA_RODRIGO_YAGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/15_MATA_RODRIGO_YAGO.png
+
+• [Dorsal 11] MIÑANA RUBIO, OSCAR
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 11 | Titular | Extremo
+  - Archivo Foto: 11_MINANA_RUBIO_OSCAR.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/11_MINANA_RUBIO_OSCAR.png
+
+• [Dorsal  3] MORENO MOÑUX, VICTOR
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 3 | Titular | Lateral
+  - Archivo Foto: 03_MORENO_MONUX_VICTOR.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/03_MORENO_MONUX_VICTOR.png
+
+• [Dorsal 21] NEVES VIÑARAS, ALVARO
+  - Demarcación: Interior
+  - Perfil/Características: Dorsal 21 | Titular | Interior / Extremo
+  - Archivo Foto: 21_NEVES_VINARAS_ALVARO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/21_NEVES_VINARAS_ALVARO.png
+
+• [Dorsal  2] PÉREZ LÓPEZ, HÉCTOR
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 2 | Suplente | Lateral
+  - Archivo Foto: 02_PEREZ_LOPEZ_HECTOR.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/02_PEREZ_LOPEZ_HECTOR.png
+
+• [Dorsal  8] SANTA CRUZ HERNANDEZ, SERGIO
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 8 | Suplente | Mediocentro
+  - Archivo Foto: 08_SANTA_CRUZ_HERNANDEZ_SERGIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/08_SANTA_CRUZ_HERNANDEZ_SERGIO.png
+
+• [Dorsal 16] SIDIBEH KRUBALLY, EBRAHIMA
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 16 | Titular | Extremo / Delantero
+  - Archivo Foto: 16_SIDIBEH_KRUBALLY_EBRAHIMA.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/16_SIDIBEH_KRUBALLY_EBRAHIMA.png
+
+• [Dorsal 17] SUSSOHO DIALLO, HAME
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 17 | Suplente | Extremo
+  - Archivo Foto: 17_SUSSOHO_DIALLO_HAME.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/17_SUSSOHO_DIALLO_HAME.png
+
+• [Dorsal 13] VAREA MONTORO, ANTONIO
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 13 | Titular | Portero
+  - Archivo Foto: 13_VAREA_MONTORO_ANTONIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/13_VAREA_MONTORO_ANTONIO.png
+
+• [Dorsal  9] VILLANUEVA LATORRE, JESUS BERNARDO
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 9 | Suplente | Delantero Centro
+  - Archivo Foto: 09_VILLANUEVA_LATORRE_JESUS_BERNARDO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/09_VILLANUEVA_LATORRE_JESUS_BERNARDO.png
+
+• [Dorsal 18] ZUBIRI REMÍREZ, OSCAR
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 18 | Titular | Central
+  - Archivo Foto: 18_ZUBIRI_REMIREZ_OSCAR.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Almazan/18_ZUBIRI_REMIREZ_OSCAR.png

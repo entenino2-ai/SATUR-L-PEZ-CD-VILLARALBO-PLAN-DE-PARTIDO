@@ -1,0 +1,126 @@
+================================================================================
+PLANTILLA Y DATOS DE JUGADORES - UNIONISTAS DE SALAMANCA C.F. "B"
+================================================================================
+Carpeta Storage: jugadores_equipo/Unionistas_B/
+Total Jugadores: 20
+Fecha: 30/9/2026
+
+• [Dorsal 18] ASIER BERZAL
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 18 | Titular | Delantero / Extremo
+  - Archivo Foto: 18_ASIER_BERZAL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/18_ASIER_BERZAL.png
+
+• [Dorsal 16] BAYARRI GONZALEZ, ALFREDO
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 16 | Suplente | Lateral
+  - Archivo Foto: 16_BAYARRI_GONZALEZ_ALFREDO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/16_BAYARRI_GONZALEZ_ALFREDO.png
+
+• [Dorsal 12] EBILEGUE, KYLIAN BRICE
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 12 | Titular | Central / Pivote
+  - Archivo Foto: 12_EBILEGUE_KYLIAN_BRICE.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/12_EBILEGUE_KYLIAN_BRICE.png
+
+• [Dorsal  4] ELOY ALONSO MORALES
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 4 | Suplente | Central
+  - Archivo Foto: 04_ELOY_ALONSO_MORALES.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/04_ELOY_ALONSO_MORALES.png
+
+• [Dorsal  3] FORTES MELLADO, JOEL
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 3 | Titular | Lateral Izquierdo / Central
+  - Archivo Foto: 03_FORTES_MELLADO_JOEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/03_FORTES_MELLADO_JOEL.png
+
+• [Dorsal 22] HUGO PORCEL
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 22 | Titular | Delantero Centro
+  - Archivo Foto: 22_HUGO_PORCEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/22_HUGO_PORCEL.png
+
+• [Dorsal  5] Isma
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 5 | Titular | Central
+  - Archivo Foto: 05_Isma.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/05_Isma.png
+
+• [Dorsal  7] Jaime
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 7 | Titular | Extremo
+  - Archivo Foto: 07_Jaime.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/07_Jaime.png
+
+• [Dorsal  9] Joel
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 9 | Suplente | Delantero Centro
+  - Archivo Foto: 09_Joel.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/09_Joel.png
+
+• [Dorsal  6] JORGE
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 6 | Suplente | Mediocentro
+  - Archivo Foto: 06_JORGE.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/06_JORGE.png
+
+• [Dorsal 24] LEO LOPEZ
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 24 | Suplente | Delantero
+  - Archivo Foto: 24_LEO_LOPEZ.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/24_LEO_LOPEZ.png
+
+• [Dorsal 13] Nacho
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 13 | Suplente | Portero
+  - Archivo Foto: 13_Nacho.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/13_Nacho.png
+
+• [Dorsal 10] OSCAR CAÑEDO
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 10 | Suplente | Mediapunta
+  - Archivo Foto: 10_OSCAR_CANEDO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/10_OSCAR_CANEDO.png
+
+• [Dorsal  2] OTERO UNDABEITIA, ALVARO
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 2 | Titular | Lateral Derecho
+  - Archivo Foto: 02_OTERO_UNDABEITIA_ALVARO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/02_OTERO_UNDABEITIA_ALVARO.png
+
+• [Dorsal 23] Pascual
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 23 | Titular | Mediapunta / Delantero
+  - Archivo Foto: 23_Pascual.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/23_Pascual.png
+
+• [Dorsal 20] RODRÍGUEZ BLANCO, RAFAEL
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 20 | Suplente | Mediocentro / Delantero
+  - Archivo Foto: 20_RODRIGUEZ_BLANCO_RAFAEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/20_RODRIGUEZ_BLANCO_RAFAEL.png
+
+• [Dorsal 21] ROZAS SÁNCHEZ, ALEJANDRO
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 21 | Suplente | Extremo / Interior
+  - Archivo Foto: 21_ROZAS_SANCHEZ_ALEJANDRO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/21_ROZAS_SANCHEZ_ALEJANDRO.png
+
+• [Dorsal 11] TORRES GONZALEZ, JOSE MANUEL
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 11 | Titular | Mediocentro / Extremo
+  - Archivo Foto: 11_TORRES_GONZALEZ_JOSE_MANUEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/11_TORRES_GONZALEZ_JOSE_MANUEL.png
+
+• [Dorsal 15] VAZQUEZ COUCEIRO, ADRIAN
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 15 | Titular | Mediocentro
+  - Archivo Foto: 15_VAZQUEZ_COUCEIRO_ADRIAN.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/15_VAZQUEZ_COUCEIRO_ADRIAN.png
+
+• [Dorsal  1] VICTOR DIEZ
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 1 | Titular | Portero
+  - Archivo Foto: 01_VICTOR_DIEZ.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Unionistas_B/01_VICTOR_DIEZ.png

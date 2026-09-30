@@ -1,0 +1,108 @@
+================================================================================
+PLANTILLA Y DATOS DE JUGADORES - ARANDINA CF
+================================================================================
+Carpeta Storage: jugadores_equipo/Arandina_CF/
+Total Jugadores: 17
+Fecha: 30/9/2026
+
+• [Dorsal 11] BARRANCO MONTOYA, FRANCISCO JAVIER
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 11 | Titular | Extremo
+  - Archivo Foto: 11_BARRANCO_MONTOYA_FRANCISCO_JAVIER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/11_BARRANCO_MONTOYA_FRANCISCO_JAVIER.png
+
+• [Dorsal 20] CORTÁZAR GARCÍA, METEKU JUAN
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 20 | Suplente | Delantero / Extremo
+  - Archivo Foto: 20_CORTAZAR_GARCIA_METEKU_JUAN.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/20_CORTAZAR_GARCIA_METEKU_JUAN.png
+
+• [Dorsal 15] CORTIJO DEL HOYO, FERNANDO
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 15 | Suplente | Lateral
+  - Archivo Foto: 15_CORTIJO_DEL_HOYO_FERNANDO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/15_CORTIJO_DEL_HOYO_FERNANDO.png
+
+• [Dorsal  6] DE BENITO FERNANDEZ, AARON
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 6 | Suplente | Mediocentro
+  - Archivo Foto: 06_DE_BENITO_FERNANDEZ_AARON.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/06_DE_BENITO_FERNANDEZ_AARON.png
+
+• [Dorsal 13] GONZALEZ CESPEDOSA, ALBERTO
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 13 | Suplente | Portero
+  - Archivo Foto: 13_GONZALEZ_CESPEDOSA_ALBERTO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/13_GONZALEZ_CESPEDOSA_ALBERTO.png
+
+• [Dorsal  8] GONZÁLEZ IGLESIAS, ISRAEL
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 8 | Titular | Mediocentro
+  - Archivo Foto: 08_GONZALEZ_IGLESIAS_ISRAEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/08_GONZALEZ_IGLESIAS_ISRAEL.png
+
+• [Dorsal 10] GONZALEZ SANTANA, MARIO
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 10 | Titular | Mediapunta / Creativo
+  - Archivo Foto: 10_GONZALEZ_SANTANA_MARIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/10_GONZALEZ_SANTANA_MARIO.png
+
+• [Dorsal  4] HURTADO MELADO, ALEJANDRO
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 4 | Suplente | Defensa Central
+  - Archivo Foto: 04_HURTADO_MELADO_ALEJANDRO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/04_HURTADO_MELADO_ALEJANDRO.png
+
+• [Dorsal 21] JIMENEZ RUIZ, ADRIAN
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 21 | Titular | Lateral
+  - Archivo Foto: 21_JIMENEZ_RUIZ_ADRIAN.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/21_JIMENEZ_RUIZ_ADRIAN.png
+
+• [Dorsal 18] KANOUTE, FAMOUSSA
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 18 | Titular | Extremo / Delantero
+  - Archivo Foto: 18_KANOUTE_FAMOUSSA.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/18_KANOUTE_FAMOUSSA.png
+
+• [Dorsal  3] MARTIN AGUILAR, FRANCISCO
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 3 | Titular | Defensa Central / Lateral
+  - Archivo Foto: 03_MARTIN_AGUILAR_FRANCISCO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/03_MARTIN_AGUILAR_FRANCISCO.png
+
+• [Dorsal 19] MENOR MOLINERO, JOSE
+  - Demarcación: Interior
+  - Perfil/Características: Dorsal 19 | Titular | Interior / Mediapunta
+  - Archivo Foto: 19_MENOR_MOLINERO_JOSE.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/19_MENOR_MOLINERO_JOSE.png
+
+• [Dorsal 14] NEBREDA MUÑOZ, LUCAS
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 14 | Titular | Lateral / Defensa
+  - Archivo Foto: 14_NEBREDA_MUNOZ_LUCAS.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/14_NEBREDA_MUNOZ_LUCAS.png
+
+• [Dorsal  9] RENGEL RODRIGUEZ, JULIO
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 9 | Titular | Delantero Centro
+  - Archivo Foto: 09_RENGEL_RODRIGUEZ_JULIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/09_RENGEL_RODRIGUEZ_JULIO.png
+
+• [Dorsal  5] SASTOQUE PINZON, JUAN DIEGO
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 5 | Titular | Central
+  - Archivo Foto: 05_SASTOQUE_PINZON_JUAN_DIEGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/05_SASTOQUE_PINZON_JUAN_DIEGO.png
+
+• [Dorsal  1] TAPIAS PEREZ, RODRIGO
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 1 | Titular | Portero
+  - Archivo Foto: 01_TAPIAS_PEREZ_RODRIGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/01_TAPIAS_PEREZ_RODRIGO.png
+
+• [Dorsal  7] VELASCO RUIZ, GUILLERMO
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 7 | Suplente | Extremo
+  - Archivo Foto: 07_VELASCO_RUIZ_GUILLERMO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Arandina_CF/07_VELASCO_RUIZ_GUILLERMO.png

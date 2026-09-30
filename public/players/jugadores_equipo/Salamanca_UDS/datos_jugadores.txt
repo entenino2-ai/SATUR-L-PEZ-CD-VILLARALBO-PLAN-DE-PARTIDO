@@ -1,0 +1,12 @@
+================================================================================
+PLANTILLA Y DATOS DE JUGADORES - SALAMANCA UDS
+================================================================================
+Carpeta Storage: jugadores_equipo/Salamanca_UDS/
+Total Jugadores: 1
+Fecha: 30/9/2026
+
+• [Dorsal --] Javier Nadal Garcia
+  - Demarcación: Delantero
+  - Perfil/Características: No especificadas
+  - Archivo Foto: Javier_Nadal_Garcia.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS/Javier_Nadal_Garcia.png

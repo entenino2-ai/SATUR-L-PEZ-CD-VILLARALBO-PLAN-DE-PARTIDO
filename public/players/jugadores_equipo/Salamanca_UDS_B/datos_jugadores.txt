@@ -1,0 +1,132 @@
+================================================================================
+PLANTILLA Y DATOS DE JUGADORES - SALAMANCA C.F. UDS "B"
+================================================================================
+Carpeta Storage: jugadores_equipo/Salamanca_UDS_B/
+Total Jugadores: 21
+Fecha: 30/9/2026
+
+• [Dorsal 15] ALONSO SANCHEZ, JAVIER
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 15 | Titular | Lateral / Mediocentro
+  - Archivo Foto: 15_ALONSO_SANCHEZ_JAVIER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/15_ALONSO_SANCHEZ_JAVIER.png
+
+• [Dorsal  2] CASCON GOMEZ, PABLO
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 2 | Titular | Lateral
+  - Archivo Foto: 02_CASCON_GOMEZ_PABLO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/02_CASCON_GOMEZ_PABLO.png
+
+• [Dorsal 20] COBO OCEJA, MATEO
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 20 | Suplente | Mediapunta / Interior
+  - Archivo Foto: 20_COBO_OCEJA_MATEO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/20_COBO_OCEJA_MATEO.png
+
+• [Dorsal 12] Cojo
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 12 | Suplente | Lateral / Defensa
+  - Archivo Foto: 12_Cojo.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/12_Cojo.png
+
+• [Dorsal  5] DOMÍNGUEZ MULAS, SERGIO
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 5 | Titular | Central
+  - Archivo Foto: 05_DOMINGUEZ_MULAS_SERGIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/05_DOMINGUEZ_MULAS_SERGIO.png
+
+• [Dorsal 24] FERREIRO GOMEZ, ANTONIO
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 24 | Suplente | Mediocentro
+  - Archivo Foto: 24_FERREIRO_GOMEZ_ANTONIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/24_FERREIRO_GOMEZ_ANTONIO.png
+
+• [Dorsal  3] GARCÍA SÁNCHEZ, SERGIO
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 3 | Titular | Lateral / Central
+  - Archivo Foto: 03_GARCIA_SANCHEZ_SERGIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/03_GARCIA_SANCHEZ_SERGIO.png
+
+• [Dorsal  7] GONZALEZ FERNANDEZ, JAIME
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 7 | Suplente | Extremo
+  - Archivo Foto: 07_GONZALEZ_FERNANDEZ_JAIME.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/07_GONZALEZ_FERNANDEZ_JAIME.png
+
+• [Dorsal  9] JIMÉNEZ JIMÉNEZ, ANGEL
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 9 | Suplente | Delantero Centro
+  - Archivo Foto: 09_JIMENEZ_JIMENEZ_ANGEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/09_JIMENEZ_JIMENEZ_ANGEL.png
+
+• [Dorsal 18] MADRUGA BARRIGA, JAIME
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 18 | Titular | Delantero / Interior
+  - Archivo Foto: 18_MADRUGA_BARRIGA_JAIME.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/18_MADRUGA_BARRIGA_JAIME.png
+
+• [Dorsal 11] MARTIN TENDERO, HUGO
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 11 | Titular | Extremo
+  - Archivo Foto: 11_MARTIN_TENDERO_HUGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/11_MARTIN_TENDERO_HUGO.png
+
+• [Dorsal 61] MENDOZA ALONSO, JUAN PABLO
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 61 | Suplente | Portero
+  - Archivo Foto: 61_MENDOZA_ALONSO_JUAN_PABLO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/61_MENDOZA_ALONSO_JUAN_PABLO.png
+
+• [Dorsal 37] MULAS GONZALEZ, LUCAS
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 37 | Suplente | Extremo / Delantero
+  - Archivo Foto: 37_MULAS_GONZALEZ_LUCAS.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/37_MULAS_GONZALEZ_LUCAS.png
+
+• [Dorsal --] NADAL GARCÍA, JAVIER
+  - Demarcación: Delantero
+  - Perfil/Características: Delantero / Extremo | Salamanca CF UDS B
+  - Archivo Foto: NADAL_GARCIA_JAVIER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/NADAL_GARCIA_JAVIER.png
+
+• [Dorsal 23] OJEDA CABALLERO, IKER RONALDO
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 23 | Titular | Extremo / Delantero
+  - Archivo Foto: 23_OJEDA_CABALLERO_IKER_RONALDO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/23_OJEDA_CABALLERO_IKER_RONALDO.png
+
+• [Dorsal  8] RAMOS MORO, ANGEL
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 8 | Titular | Mediocentro
+  - Archivo Foto: 08_RAMOS_MORO_ANGEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/08_RAMOS_MORO_ANGEL.png
+
+• [Dorsal 16] RIVERA RODRIGUEZ, SERGIO
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 16 | Suplente | Mediocentro
+  - Archivo Foto: 16_RIVERA_RODRIGUEZ_SERGIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/16_RIVERA_RODRIGUEZ_SERGIO.png
+
+• [Dorsal 25] SEGURA GIRALDEZ, MARIO
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 25 | Titular | Mediocentro
+  - Archivo Foto: 25_SEGURA_GIRALDEZ_MARIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/25_SEGURA_GIRALDEZ_MARIO.png
+
+• [Dorsal 22] TEJEDOR ROMERO, ALBERTO
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 22 | Suplente | Central
+  - Archivo Foto: 22_TEJEDOR_ROMERO_ALBERTO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/22_TEJEDOR_ROMERO_ALBERTO.png
+
+• [Dorsal 13] VELASCO LOZANO, ISMAEL
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 13 | Titular | Portero
+  - Archivo Foto: 13_VELASCO_LOZANO_ISMAEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/13_VELASCO_LOZANO_ISMAEL.png
+
+• [Dorsal 10] VIGO ACEVES, MANUEL
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 10 | Titular | Mediapunta / Organizador
+  - Archivo Foto: 10_VIGO_ACEVES_MANUEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS_B/10_VIGO_ACEVES_MANUEL.png

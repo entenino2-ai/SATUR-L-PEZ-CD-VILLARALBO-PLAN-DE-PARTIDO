@@ -1,0 +1,126 @@
+================================================================================
+PLANTILLA Y DATOS DE JUGADORES - U.D. SANTA MARTA DE TORMES
+================================================================================
+Carpeta Storage: jugadores_equipo/Santa_Marta/
+Total Jugadores: 20
+Fecha: 30/9/2026
+
+• [Dorsal  2] ALONSO CARBALLO, DIEGO JOSE
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 2 | Titular | Lateral Derecho
+  - Archivo Foto: 02_ALONSO_CARBALLO_DIEGO_JOSE.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/02_ALONSO_CARBALLO_DIEGO_JOSE.png
+
+• [Dorsal 21] ARIAS GARCIA, MANUEL
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 21 | Suplente | Delantero
+  - Archivo Foto: 21_ARIAS_GARCIA_MANUEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/21_ARIAS_GARCIA_MANUEL.png
+
+• [Dorsal 22] COQUE PÉREZ, ÁLVARO
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 22 | Titular | Lateral Izquierdo
+  - Archivo Foto: 22_COQUE_PEREZ_ALVARO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/22_COQUE_PEREZ_ALVARO.png
+
+• [Dorsal  1] DEL RÍO REDONDO, SERGIO
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 1 | Titular | Portero
+  - Archivo Foto: 01_DEL_RIO_REDONDO_SERGIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/01_DEL_RIO_REDONDO_SERGIO.png
+
+• [Dorsal 30] EGIDO CALLES, ALVARO
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 30 | Suplente | Mediocentro
+  - Archivo Foto: 30_EGIDO_CALLES_ALVARO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/30_EGIDO_CALLES_ALVARO.png
+
+• [Dorsal  9] GALVAN ROMO, MARTIN LUIS
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 9 | Titular | Delantero Centro
+  - Archivo Foto: 09_GALVAN_ROMO_MARTIN_LUIS.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/09_GALVAN_ROMO_MARTIN_LUIS.png
+
+• [Dorsal  8] GANDARA GONZALEZ, ROBERTO
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 8 | Suplente | Mediocentro
+  - Archivo Foto: 08_GANDARA_GONZALEZ_ROBERTO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/08_GANDARA_GONZALEZ_ROBERTO.png
+
+• [Dorsal 17] GARCIA GARCIA, ALONSO
+  - Demarcación: Interior
+  - Perfil/Características: Dorsal 17 | Suplente | Interior / Extremo
+  - Archivo Foto: 17_GARCIA_GARCIA_ALONSO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/17_GARCIA_GARCIA_ALONSO.png
+
+• [Dorsal  3] GARCÍA OLIVA, MANUEL SANTIAGO
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 3 | Titular | Central
+  - Archivo Foto: 03_GARCIA_OLIVA_MANUEL_SANTIAGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/03_GARCIA_OLIVA_MANUEL_SANTIAGO.png
+
+• [Dorsal 26] GARCIA VINAGRE, CHRISTIAN
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 26 | Suplente | Extremo
+  - Archivo Foto: 26_GARCIA_VINAGRE_CHRISTIAN.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/26_GARCIA_VINAGRE_CHRISTIAN.png
+
+• [Dorsal  4] GARRIDO RODRIGUEZ, DANIEL
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 4 | Suplente | Defensa Central
+  - Archivo Foto: 04_GARRIDO_RODRIGUEZ_DANIEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/04_GARRIDO_RODRIGUEZ_DANIEL.png
+
+• [Dorsal  7] HERNANDEZ EZQUERRO, IKER
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 7 | Titular | Extremo / Delantero
+  - Archivo Foto: 07_HERNANDEZ_EZQUERRO_IKER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/07_HERNANDEZ_EZQUERRO_IKER.png
+
+• [Dorsal  5] INIESTA SORIANO, ALEJANDRO
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 5 | Titular | Central
+  - Archivo Foto: 05_INIESTA_SORIANO_ALEJANDRO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/05_INIESTA_SORIANO_ALEJANDRO.png
+
+• [Dorsal 23] LEON ORTEGA, ADRIAN
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 23 | Titular | Pivote / Central
+  - Archivo Foto: 23_LEON_ORTEGA_ADRIAN.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/23_LEON_ORTEGA_ADRIAN.png
+
+• [Dorsal 11] MARTÍN MARCOS, DAVID
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 11 | Suplente | Extremo
+  - Archivo Foto: 11_MARTIN_MARCOS_DAVID.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/11_MARTIN_MARCOS_DAVID.png
+
+• [Dorsal 19] NATER CARUNGAL, NINTE
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 19 | Titular | Extremo
+  - Archivo Foto: 19_NATER_CARUNGAL_NINTE.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/19_NATER_CARUNGAL_NINTE.png
+
+• [Dorsal 20] RODERO BERROCAL, ENRIQUE
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 20 | Suplente | Centrocampista
+  - Archivo Foto: 20_RODERO_BERROCAL_ENRIQUE.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/20_RODERO_BERROCAL_ENRIQUE.png
+
+• [Dorsal 13] SALDAÑA BAEZA, JOSE MARIA
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 13 | Suplente | Portero
+  - Archivo Foto: 13_SALDANA_BAEZA_JOSE_MARIA.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/13_SALDANA_BAEZA_JOSE_MARIA.png
+
+• [Dorsal 10] SANTOS RUBIO, SERGIO
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 10 | Titular | Mediapunta / Organizador
+  - Archivo Foto: 10_SANTOS_RUBIO_SERGIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/10_SANTOS_RUBIO_SERGIO.png
+
+• [Dorsal  6] VELAZQUEZ SANCHO, MIGUEL
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 6 | Titular | Mediocentro
+  - Archivo Foto: 06_VELAZQUEZ_SANCHO_MIGUEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Santa_Marta/06_VELAZQUEZ_SANCHO_MIGUEL.png

@@ -1,0 +1,21 @@
+{
+  "equipo": "Salamanca UDS",
+  "id_equipo": "88f93804-cb96-40ae-9895-d8c1309a130f",
+  "carpeta_storage": "jugadores_equipo/Salamanca_UDS/",
+  "total_jugadores": 1,
+  "actualizado_en": "2026-09-30T09:36:19.556Z",
+  "plantilla": [
+    {
+      "id": "08216656-2d8d-48a8-b5c2-1b1cbefbb202",
+      "nombre": "Javier Nadal Garcia",
+      "dorsal": null,
+      "demarcacion": "Delantero",
+      "caracteristicas": "",
+      "foto_archivo": "Javier_Nadal_Garcia.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/Salamanca_UDS/Javier_Nadal_Garcia.png",
+      "equipo_id": "88f93804-cb96-40ae-9895-d8c1309a130f",
+      "equipo_nombre": "Salamanca UDS",
+      "creado_en": "2026-09-22T08:28:09.920879+00:00"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+================================================================================
+PLANTILLA Y DATOS DE JUGADORES - C.D. LA VIRGEN DEL CAMINO
+================================================================================
+Carpeta Storage: jugadores_equipo/La_Virgen_del_Camino/
+Total Jugadores: 20
+Fecha: 30/9/2026
+
+• [Dorsal 21] ALLER FERNANDEZ, JORGE
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 21 | Suplente | Central
+  - Archivo Foto: 21_ALLER_FERNANDEZ_JORGE.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/21_ALLER_FERNANDEZ_JORGE.png
+
+• [Dorsal 20] ALONSO BARDON, JORGE
+  - Demarcación: Interior
+  - Perfil/Características: Dorsal 20 | Titular | Interior / Mediapunta
+  - Archivo Foto: 20_ALONSO_BARDON_JORGE.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/20_ALONSO_BARDON_JORGE.png
+
+• [Dorsal 17] ALVAREZ CASTRILLO, HUGO
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 17 | Suplente | Mediocentro
+  - Archivo Foto: 17_ALVAREZ_CASTRILLO_HUGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/17_ALVAREZ_CASTRILLO_HUGO.png
+
+• [Dorsal  9] CALLEJA VAZQUEZ, ABEL
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 9 | Suplente | Delantero Centro
+  - Archivo Foto: 09_CALLEJA_VAZQUEZ_ABEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/09_CALLEJA_VAZQUEZ_ABEL.png
+
+• [Dorsal  6] CARNICERO GAGO, ÓLIVER
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 6 | Titular | Mediocentro
+  - Archivo Foto: 06_CARNICERO_GAGO_OLIVER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/06_CARNICERO_GAGO_OLIVER.png
+
+• [Dorsal 16] CARPINTERO ALLEGUE, IKER
+  - Demarcación: Interior
+  - Perfil/Características: Dorsal 16 | Suplente | Interior / Extremo
+  - Archivo Foto: 16_CARPINTERO_ALLEGUE_IKER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/16_CARPINTERO_ALLEGUE_IKER.png
+
+• [Dorsal 19] CARTON CARRERA, HECTOR
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 19 | Suplente | Delantero
+  - Archivo Foto: 19_CARTON_CARRERA_HECTOR.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/19_CARTON_CARRERA_HECTOR.png
+
+• [Dorsal 15] DE PRADO QUINTANA, VICTOR
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 15 | Suplente | Mediocentro / Lateral
+  - Archivo Foto: 15_DE_PRADO_QUINTANA_VICTOR.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/15_DE_PRADO_QUINTANA_VICTOR.png
+
+• [Dorsal  1] FREILE RAMOS, DANIEL
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 1 | Titular | Portero
+  - Archivo Foto: 01_FREILE_RAMOS_DANIEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/01_FREILE_RAMOS_DANIEL.png
+
+• [Dorsal 11] LESCUN MORAN, MIGUEL
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 11 | Titular | Extremo
+  - Archivo Foto: 11_LESCUN_MORAN_MIGUEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/11_LESCUN_MORAN_MIGUEL.png
+
+• [Dorsal 18] LÓPEZ NICOLÁS, PABLO
+  - Demarcación: Mediapunta
+  - Perfil/Características: Dorsal 18 | Titular | Mediapunta / Delantero
+  - Archivo Foto: 18_LOPEZ_NICOLAS_PABLO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/18_LOPEZ_NICOLAS_PABLO.png
+
+• [Dorsal 13] MARTINEZ MORILLO, ALEJANDRO
+  - Demarcación: Portero
+  - Perfil/Características: Dorsal 13 | Suplente | Portero
+  - Archivo Foto: 13_MARTINEZ_MORILLO_ALEJANDRO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/13_MARTINEZ_MORILLO_ALEJANDRO.png
+
+• [Dorsal 14] MARTÍNEZ VELASCO, ALBERTO
+  - Demarcación: Mediocentro
+  - Perfil/Características: Dorsal 14 | Titular | Mediocentro
+  - Archivo Foto: 14_MARTINEZ_VELASCO_ALBERTO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/14_MARTINEZ_VELASCO_ALBERTO.png
+
+• [Dorsal 12] MOLINA MARTINEZ, DIEGO
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 12 | Titular | Lateral / Mediocentro
+  - Archivo Foto: 12_MOLINA_MARTINEZ_DIEGO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/12_MOLINA_MARTINEZ_DIEGO.png
+
+• [Dorsal 26] NEGRAL FERNANDEZ, DANIEL
+  - Demarcación: Delantero
+  - Perfil/Características: Dorsal 26 | Titular | Delantero Centro
+  - Archivo Foto: 26_NEGRAL_FERNANDEZ_DANIEL.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/26_NEGRAL_FERNANDEZ_DANIEL.png
+
+• [Dorsal 22] NIETO GONZALEZ, ALVARO
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 22 | Titular | Central
+  - Archivo Foto: 22_NIETO_GONZALEZ_ALVARO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/22_NIETO_GONZALEZ_ALVARO.png
+
+• [Dorsal  3] PEREDA PUENTE, ALEJANDRO
+  - Demarcación: Defensa Lateral
+  - Perfil/Características: Dorsal 3 | Suplente | Lateral / Portero
+  - Archivo Foto: 03_PEREDA_PUENTE_ALEJANDRO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/03_PEREDA_PUENTE_ALEJANDRO.png
+
+• [Dorsal  4] PEREZ PEREZ, FRANCISCO JAVIER
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 4 | Titular | Central
+  - Archivo Foto: 04_PEREZ_PEREZ_FRANCISCO_JAVIER.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/04_PEREZ_PEREZ_FRANCISCO_JAVIER.png
+
+• [Dorsal  5] PEREZ VERA MERINO, EUGENIO
+  - Demarcación: Defensa Central
+  - Perfil/Características: Dorsal 5 | Titular | Central / Lateral
+  - Archivo Foto: 05_PEREZ_VERA_MERINO_EUGENIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/05_PEREZ_VERA_MERINO_EUGENIO.png
+
+• [Dorsal  7] VISA MARTINEZ, MARIO
+  - Demarcación: Extremo
+  - Perfil/Características: Dorsal 7 | Suplente | Extremo
+  - Archivo Foto: 07_VISA_MARTINEZ_MARIO.png
+  - URL Pública: https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/La_Virgen_del_Camino/07_VISA_MARTINEZ_MARIO.png
