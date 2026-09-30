@@ -23,6 +23,7 @@ export interface Jugador {
 export interface JugadorEquipo {
   id: string;
   equipo_id: string;
+  equipo_nombre?: string;
   nombre: string;
   demarcacion: DemarcacionType;
   caracteristicas: string | null;

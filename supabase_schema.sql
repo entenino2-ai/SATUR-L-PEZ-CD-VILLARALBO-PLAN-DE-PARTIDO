@@ -133,12 +133,43 @@ CREATE TABLE IF NOT EXISTS eventos_partido (
 CREATE TABLE IF NOT EXISTS jugadores_equipo (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   equipo_id UUID REFERENCES equipos(id) ON DELETE CASCADE,
+  equipo_nombre VARCHAR(255),
   nombre VARCHAR(255) NOT NULL,
   demarcacion demarcacion_enum NOT NULL,
   caracteristicas TEXT,
   foto_url TEXT,
   creado_en TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
 );
+
+-- Trigger para mantener equipo_nombre sincronizado automáticamente
+CREATE OR REPLACE FUNCTION actualizar_equipo_nombre_jugador()
+RETURNS TRIGGER AS $$
+BEGIN
+  SELECT nombre INTO NEW.equipo_nombre FROM equipos WHERE id = NEW.equipo_id;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE OR REPLACE TRIGGER trg_actualizar_equipo_nombre
+BEFORE INSERT OR UPDATE OF equipo_id ON jugadores_equipo
+FOR EACH ROW
+EXECUTE FUNCTION actualizar_equipo_nombre_jugador();
+
+-- Vista para consultar directamente con el nombre del equipo
+CREATE OR REPLACE VIEW vista_jugadores_equipo 
+WITH (security_invoker = true)
+AS
+SELECT 
+  j.id,
+  j.equipo_id,
+  COALESCE(j.equipo_nombre, e.nombre) AS equipo_nombre,
+  j.nombre,
+  j.demarcacion,
+  j.caracteristicas,
+  j.foto_url,
+  j.creado_en
+FROM jugadores_equipo j
+LEFT JOIN equipos e ON j.equipo_id = e.id;
 
 -- 11. TABLA: ALINEACIONES (Pizarra táctica y sistemas)
 CREATE TABLE IF NOT EXISTS alineaciones (

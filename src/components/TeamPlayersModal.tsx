@@ -114,8 +114,9 @@ export default function TeamPlayersModal({ isOpen, onClose, team }: TeamPlayersM
         }
       }
 
-      const playerData = {
+      const playerData: any = {
         equipo_id: team.id,
+        equipo_nombre: team.nombre,
         nombre: editingPlayer.nombre,
         demarcacion: editingPlayer.demarcacion,
         caracteristicas: editingPlayer.caracteristicas || '',
@@ -128,20 +129,43 @@ export default function TeamPlayersModal({ isOpen, onClose, team }: TeamPlayersM
           .from('jugadores_equipo')
           .update(playerData)
           .eq('id', editingPlayer.id);
-        if (error) throw error;
+        
+        if (error) {
+          if (error.message?.includes('equipo_nombre') || error.code === '42703') {
+            delete playerData.equipo_nombre;
+            const { error: retryErr } = await supabase
+              .from('jugadores_equipo')
+              .update(playerData)
+              .eq('id', editingPlayer.id);
+            if (retryErr) throw retryErr;
+          } else {
+            throw error;
+          }
+        }
       } else {
         // Insert
         const { error } = await supabase
           .from('jugadores_equipo')
           .insert(playerData);
-        if (error) throw error;
+        
+        if (error) {
+          if (error.message?.includes('equipo_nombre') || error.code === '42703') {
+            delete playerData.equipo_nombre;
+            const { error: retryErr } = await supabase
+              .from('jugadores_equipo')
+              .insert(playerData);
+            if (retryErr) throw retryErr;
+          } else {
+            throw error;
+          }
+        }
       }
 
       await loadPlayers();
       cancelEdit();
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error saving player:', error);
-      alert('Error al guardar el jugador.');
+      alert('Error al guardar el jugador: ' + (error?.message || ''));
     } finally {
       setIsSaving(false);
     }
