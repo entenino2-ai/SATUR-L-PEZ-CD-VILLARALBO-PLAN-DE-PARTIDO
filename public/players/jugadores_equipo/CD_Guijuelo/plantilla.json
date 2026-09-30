@@ -1,0 +1,196 @@
+{
+  "equipo": "C.D. Guijuelo",
+  "id_equipo": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+  "carpeta_storage": "jugadores_equipo/CD_Guijuelo/",
+  "total_jugadores": 17,
+  "actualizado_en": "2026-09-30T12:31:07.964Z",
+  "plantilla": [
+    {
+      "id": "a458cacc-8936-4d8c-be1d-1247743789ed",
+      "dorsal": 13,
+      "nombre": "GUZMAN DE LOS SANTOS, JOHAN SNICK",
+      "demarcacion": "Portero",
+      "caracteristicas": "Dorsal 13 | Titular | Portero",
+      "foto_archivo": "13_GUZMAN_DE_LOS_SANTOS__JOHAN_SNICK.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/13_GUZMAN_DE_LOS_SANTOS__JOHAN_SNICK.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "9325af64-dc1d-4192-a56a-988016e8a54d",
+      "dorsal": 3,
+      "nombre": "GONZALEZ GOMEZ, RODRIGO",
+      "demarcacion": "Defensa Lateral",
+      "caracteristicas": "Dorsal 3 | Titular | Lateral / Defensa",
+      "foto_archivo": "03_GONZALEZ_GOMEZ__RODRIGO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/03_GONZALEZ_GOMEZ__RODRIGO.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "608d7fc6-f9d7-47b0-a921-9329a1b87372",
+      "dorsal": 4,
+      "nombre": "ROSON FERNANDEZ, DAVID",
+      "demarcacion": "Defensa Central",
+      "caracteristicas": "Dorsal 4 | Titular | Defensa Central",
+      "foto_archivo": "04_ROSON_FERNANDEZ__DAVID.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/04_ROSON_FERNANDEZ__DAVID.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "444cac39-b8ea-4fae-84f1-d826a7ce8710",
+      "dorsal": 5,
+      "nombre": "RUIZ IBORRA, JOSÉ",
+      "demarcacion": "Defensa Central",
+      "caracteristicas": "Dorsal 5 | Titular | Defensa Central",
+      "foto_archivo": "05_RUIZ_IBORRA__JOSE.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/05_RUIZ_IBORRA__JOSE.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "5e0627fb-3344-4300-8941-9be6463ce11d",
+      "dorsal": 7,
+      "nombre": "GARCIA OVIEDO, HUGO",
+      "demarcacion": "Extremo",
+      "caracteristicas": "Dorsal 7 | Titular | Extremo / Atacante",
+      "foto_archivo": "07_GARCIA_OVIEDO__HUGO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/07_GARCIA_OVIEDO__HUGO.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "e46436ed-639c-40a2-a4ff-f806b04905cf",
+      "dorsal": 8,
+      "nombre": "SANCHEZ ASTUDILLO, SERGIO",
+      "demarcacion": "Mediocentro",
+      "caracteristicas": "Dorsal 8 | Titular | Mediocentro / Pivote",
+      "foto_archivo": "08_SANCHEZ_ASTUDILLO__SERGIO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/08_SANCHEZ_ASTUDILLO__SERGIO.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "0e93cbe9-9583-4180-93a3-ff8145f0010d",
+      "dorsal": 14,
+      "nombre": "MARTIN ANDRES, ALBERTO",
+      "demarcacion": "Mediocentro",
+      "caracteristicas": "Dorsal 14 | Titular | Mediocentro",
+      "foto_archivo": "14_MARTIN_ANDRES__ALBERTO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/14_MARTIN_ANDRES__ALBERTO.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "28e84194-5144-4c99-9ded-83589012d230",
+      "dorsal": 17,
+      "nombre": "SANCHEZ MARTIN, DANIEL",
+      "demarcacion": "Mediapunta",
+      "caracteristicas": "Dorsal 17 | Titular | Mediapunta / Organizador",
+      "foto_archivo": "17_SANCHEZ_MARTIN__DANIEL.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/17_SANCHEZ_MARTIN__DANIEL.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "171219e5-4e5b-427d-8dd2-89e25c098dd1",
+      "dorsal": 19,
+      "nombre": "GODSON, CHRISTIAN",
+      "demarcacion": "Delantero",
+      "caracteristicas": "Dorsal 19 | Titular | Delantero Centro",
+      "foto_archivo": "19_GODSON__CHRISTIAN.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/19_GODSON__CHRISTIAN.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "e774fe39-6b46-4575-8a95-e6ac0dabee7b",
+      "dorsal": 21,
+      "nombre": "ALVAREZ GARCIA, PEDRO",
+      "demarcacion": "Defensa Lateral",
+      "caracteristicas": "Dorsal 21 | Titular | Lateral",
+      "foto_archivo": "21_ALVAREZ_GARCIA__PEDRO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/21_ALVAREZ_GARCIA__PEDRO.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "b5007387-0c47-4bf6-be4b-b56c9518ea8c",
+      "dorsal": 22,
+      "nombre": "SANCHEZ GONZALEZ, ALVARO",
+      "demarcacion": "Extremo",
+      "caracteristicas": "Dorsal 22 | Titular | Extremo / Banda",
+      "foto_archivo": "22_SANCHEZ_GONZALEZ__ALVARO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/22_SANCHEZ_GONZALEZ__ALVARO.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "050b5c44-589b-4095-a5dc-f17e33d73cf8",
+      "dorsal": 1,
+      "nombre": "FERNANDEZ GARCIA, DANIEL",
+      "demarcacion": "Portero",
+      "caracteristicas": "Dorsal 1 | Suplente | Portero",
+      "foto_archivo": "01_FERNANDEZ_GARCIA__DANIEL.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/01_FERNANDEZ_GARCIA__DANIEL.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "c320927c-4c74-47e1-aade-97afc0f0fec8",
+      "dorsal": 6,
+      "nombre": "GUTIERREZ PARRA, HUGO",
+      "demarcacion": "Defensa Central",
+      "caracteristicas": "Dorsal 6 | Suplente | Central / Defensa",
+      "foto_archivo": "06_GUTIERREZ_PARRA__HUGO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/06_GUTIERREZ_PARRA__HUGO.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "c29ab2e3-6dc1-475e-88a4-4cb09681e279",
+      "dorsal": 9,
+      "nombre": "LAZARO GAITAN, ROBERTO",
+      "demarcacion": "Delantero",
+      "caracteristicas": "Dorsal 9 | Suplente | Delantero",
+      "foto_archivo": "09_LAZARO_GAITAN__ROBERTO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/09_LAZARO_GAITAN__ROBERTO.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "8f372a06-a071-4716-a0d7-71db9083928b",
+      "dorsal": 15,
+      "nombre": "MURIEL SASTRE, FERNANDO",
+      "demarcacion": "Interior",
+      "caracteristicas": "Dorsal 15 | Suplente | Interior / Mediocentro",
+      "foto_archivo": "15_MURIEL_SASTRE__FERNANDO.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/15_MURIEL_SASTRE__FERNANDO.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "f33923be-dc65-4349-a96d-6e182adf57fd",
+      "dorsal": 16,
+      "nombre": "CORDERO BALLESTEROS, DANIEL",
+      "demarcacion": "Mediocentro",
+      "caracteristicas": "Dorsal 16 | Suplente | Mediocentro",
+      "foto_archivo": "16_CORDERO_BALLESTEROS__DANIEL.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/16_CORDERO_BALLESTEROS__DANIEL.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    },
+    {
+      "id": "b9d3498d-6fa8-4591-8e68-985b7c5ea871",
+      "dorsal": 20,
+      "nombre": "REYES ARDILA, ROBERTO ANDRES",
+      "demarcacion": "Extremo",
+      "caracteristicas": "Dorsal 20 | Suplente | Extremo / Atacante",
+      "foto_archivo": "20_REYES_ARDILA__ROBERTO_ANDRES.png",
+      "foto_url": "https://slexyuklfyjufevzppsc.supabase.co/storage/v1/object/public/FOTOS%20JUGADORES/jugadores_equipo/CD_Guijuelo/20_REYES_ARDILA__ROBERTO_ANDRES.png",
+      "equipo_id": "7b45bcc3-71b5-4678-903e-9b4d7da3f3f0",
+      "equipo_nombre": "C.D. Guijuelo"
+    }
+  ]
+}
