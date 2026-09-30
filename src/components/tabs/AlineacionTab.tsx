@@ -33,6 +33,7 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
   const [mostrarRival, setMostrarRival] = useState(true);
   const [jugadoresAlineados, setJugadoresAlineados] = useState<Record<string, any>>({});
   const [customPositions, setCustomPositions] = useState<Record<string, { x: number; y: number }>>({});
+  const [dibujos, setDibujos] = useState<any[]>([]);
   const [analisisIa, setAnalisisIa] = useState<string | null>(null);
 
   // Players State
@@ -100,11 +101,17 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
           } else if (mapping._customPositions && typeof mapping._customPositions === 'object') {
             setCustomPositions(mapping._customPositions);
           }
+
+          if (alineacionData.dibujos && Array.isArray(alineacionData.dibujos)) {
+            setDibujos(alineacionData.dibujos);
+          } else if (mapping._dibujos && Array.isArray(mapping._dibujos)) {
+            setDibujos(mapping._dibujos);
+          }
           
           const hydrated: Record<string, any> = {};
           
           Object.keys(mapping).forEach(posId => {
-            if (posId === '_customPositions') return;
+            if (posId === '_customPositions' || posId === '_dibujos') return;
             const item = mapping[posId];
             const pid = typeof item === 'object' && item !== null ? item.playerId : item;
             let pObj: any = playersData.find(p => p.id === pid);
@@ -133,16 +140,19 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
     try {
       setSaving(true);
       
-      // Serialize mapping to just IDs + embed _customPositions for guaranteed persistence
+      // Serialize mapping to just IDs + embed _customPositions and _dibujos for guaranteed persistence
       const mappingIds: Record<string, any> = {};
       Object.keys(jugadoresAlineados).forEach(k => {
-        if (k !== '_customPositions') {
+        if (k !== '_customPositions' && k !== '_dibujos') {
           mappingIds[k] = jugadoresAlineados[k].id;
         }
       });
       
       if (customPositions && Object.keys(customPositions).length > 0) {
         mappingIds._customPositions = customPositions;
+      }
+      if (dibujos && dibujos.length > 0) {
+        mappingIds._dibujos = dibujos;
       }
 
       const payload: any = {
@@ -156,6 +166,9 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
 
       if (customPositions && Object.keys(customPositions).length > 0) {
         payload.posiciones_custom = customPositions;
+      }
+      if (dibujos && dibujos.length > 0) {
+        payload.dibujos = dibujos;
       }
 
       const { error } = await supabase
@@ -441,6 +454,8 @@ export default function AlineacionTab({ partido, showToast }: AlineacionTabProps
           mostrarRival={mostrarRival}
           jugadoresAlineados={jugadoresAlineados}
           customPositions={customPositions}
+          dibujos={dibujos}
+          onDibujosChange={setDibujos}
           onMoveNode={handleMoveNode}
           onDropJugador={onDropJugador}
           onRemoveJugador={onRemoveJugador}

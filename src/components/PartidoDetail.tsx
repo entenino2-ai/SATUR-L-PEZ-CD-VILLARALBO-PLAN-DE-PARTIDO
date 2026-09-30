@@ -1,13 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ArrowLeft, Calendar, MapPin } from 'lucide-react';
+import { ArrowLeft, Calendar, MapPin, FileText, Printer } from 'lucide-react';
 import { Partido } from '../lib/types';
 import InformeRivalTab from './tabs/InformeRivalTab';
 import PlanPartidoTab from './tabs/PlanPartidoTab';
 import ABPTab from './tabs/ABPTab';
 import EventosPartidoTab from './tabs/EventosPartidoTab';
 import AlineacionTab from './tabs/AlineacionTab';
+import RendimientoTab from './tabs/RendimientoTab';
+import PartidoReportModal from './PartidoReportModal';
 
 interface PartidoDetailProps {
   partido: Partido;
@@ -16,7 +18,8 @@ interface PartidoDetailProps {
 }
 
 export default function PartidoDetail({ partido, onBack, showToast }: PartidoDetailProps) {
-  const [activeTab, setActiveTab] = useState<'informe' | 'alineacion' | 'plan' | 'abp' | 'eventos'>('informe');
+  const [activeTab, setActiveTab] = useState<'informe' | 'alineacion' | 'plan' | 'abp' | 'eventos' | 'rendimiento'>('informe');
+  const [isReportModalOpen, setIsReportModalOpen] = useState(false);
 
   const local = partido.equipo_local;
   const visitante = partido.equipo_visitante;
@@ -47,23 +50,36 @@ export default function PartidoDetail({ partido, onBack, showToast }: PartidoDet
   // List of tabs matching the design
   const tabs = [
     { id: 'informe', label: 'Informe rival' },
-    { id: 'alineacion', label: 'Alineación' },
+    { id: 'alineacion', label: 'Alineación & Pizarra' },
     { id: 'plan', label: 'Plan de partido' },
     { id: 'abp', label: 'ABP' },
-    { id: 'eventos', label: 'Eventos' }
+    { id: 'eventos', label: 'Eventos' },
+    { id: 'rendimiento', label: 'Rendimiento' }
   ] as const;
 
   return (
     <div className="space-y-6">
       
-      {/* Volver al listado button */}
-      <button
-        onClick={onBack}
-        className="flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2 text-xs font-extrabold text-foreground hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shadow-sm cursor-pointer w-fit"
-      >
-        <ArrowLeft className="h-4 w-4" />
-        <span>Volver a Partidos</span>
-      </button>
+      {/* Top action row */}
+      <div className="flex items-center justify-between gap-4">
+        {/* Volver al listado button */}
+        <button
+          onClick={onBack}
+          className="flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2 text-xs font-extrabold text-foreground hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shadow-sm cursor-pointer w-fit"
+        >
+          <ArrowLeft className="h-4 w-4" />
+          <span>Volver a Partidos</span>
+        </button>
+
+        {/* Dossier PDF button */}
+        <button
+          onClick={() => setIsReportModalOpen(true)}
+          className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary to-primary-blue hover:opacity-95 text-white px-4 py-2 text-xs font-black transition-all shadow-md hover:shadow-lg cursor-pointer"
+        >
+          <Printer className="h-4 w-4" />
+          <span>Exportar Dossier PDF / Ficha</span>
+        </button>
+      </div>
 
       {/* Match Info Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between rounded-2xl border border-border bg-card p-6 shadow-sm">
@@ -153,7 +169,19 @@ export default function PartidoDetail({ partido, onBack, showToast }: PartidoDet
         {activeTab === 'alineacion' && (
           <AlineacionTab partido={partido} showToast={showToast} />
         )}
+
+        {activeTab === 'rendimiento' && (
+          <RendimientoTab partido={partido} showToast={showToast} />
+        )}
       </div>
+
+      {/* Dossier Report Modal */}
+      {isReportModalOpen && (
+        <PartidoReportModal 
+          partido={partido}
+          onClose={() => setIsReportModalOpen(false)}
+        />
+      )}
 
     </div>
   );

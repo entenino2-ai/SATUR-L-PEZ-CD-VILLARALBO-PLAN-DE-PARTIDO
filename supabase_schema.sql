@@ -129,6 +129,48 @@ CREATE TABLE IF NOT EXISTS eventos_partido (
 );
 
 
+-- 10. TABLA: JUGADORES_EQUIPO (Plantilla de equipos rivales)
+CREATE TABLE IF NOT EXISTS jugadores_equipo (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  equipo_id UUID REFERENCES equipos(id) ON DELETE CASCADE,
+  nombre VARCHAR(255) NOT NULL,
+  demarcacion demarcacion_enum NOT NULL,
+  caracteristicas TEXT,
+  foto_url TEXT,
+  creado_en TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+-- 11. TABLA: ALINEACIONES (Pizarra táctica y sistemas)
+CREATE TABLE IF NOT EXISTS alineaciones (
+  partido_id UUID PRIMARY KEY REFERENCES partidos(id) ON DELETE CASCADE,
+  formacion_local VARCHAR(50) DEFAULT '4-3-3' NOT NULL,
+  formacion_rival VARCHAR(50) DEFAULT '4-3-3' NOT NULL,
+  mostrar_rival BOOLEAN DEFAULT true NOT NULL,
+  jugadores_11 JSONB DEFAULT '{}'::jsonb NOT NULL,
+  posiciones_custom JSONB DEFAULT '{}'::jsonb,
+  dibujos JSONB DEFAULT '[]'::jsonb,
+  analisis_ia TEXT,
+  creado_en TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+-- 12. TABLA: ESTADISTICAS_PARTIDO_JUGADOR (Rendimiento individual por partido)
+CREATE TABLE IF NOT EXISTS estadisticas_partido_jugador (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  partido_id UUID REFERENCES partidos(id) ON DELETE CASCADE,
+  jugador_id UUID REFERENCES jugadores(id) ON DELETE CASCADE,
+  convocado BOOLEAN DEFAULT true NOT NULL,
+  titular BOOLEAN DEFAULT false NOT NULL,
+  minutos_jugados INTEGER DEFAULT 0,
+  goles INTEGER DEFAULT 0,
+  asistencias INTEGER DEFAULT 0,
+  tarjetas_amarillas INTEGER DEFAULT 0,
+  tarjetas_rojas INTEGER DEFAULT 0,
+  valoracion NUMERIC DEFAULT 7.0,
+  notas TEXT,
+  creado_en TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL,
+  CONSTRAINT uq_partido_jugador_stat UNIQUE (partido_id, jugador_id)
+);
+
 -- ==========================================
 -- CONFIGURACIÓN DE STORAGE BUCKETS (SUPABASE)
 -- ==========================================
@@ -174,6 +216,9 @@ ALTER TABLE informes_rival ENABLE ROW LEVEL SECURITY;
 ALTER TABLE planes_partido ENABLE ROW LEVEL SECURITY;
 ALTER TABLE abp ENABLE ROW LEVEL SECURITY;
 ALTER TABLE eventos_partido ENABLE ROW LEVEL SECURITY;
+ALTER TABLE jugadores_equipo ENABLE ROW LEVEL SECURITY;
+ALTER TABLE alineaciones ENABLE ROW LEVEL SECURITY;
+ALTER TABLE estadisticas_partido_jugador ENABLE ROW LEVEL SECURITY;
 
 -- Crear políticas para permitir todas las operaciones CRUD (Lectura y Escritura) a los usuarios 
 -- (tanto anónimos como autenticados) utilizando la Anon Key.
@@ -186,3 +231,7 @@ CREATE POLICY "Permitir todo a todos en informes_rival" ON informes_rival FOR AL
 CREATE POLICY "Permitir todo a todos en planes_partido" ON planes_partido FOR ALL USING (true) WITH CHECK (true);
 CREATE POLICY "Permitir todo a todos en abp" ON abp FOR ALL USING (true) WITH CHECK (true);
 CREATE POLICY "Permitir todo a todos en eventos_partido" ON eventos_partido FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "Permitir todo a todos en jugadores_equipo" ON jugadores_equipo FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "Permitir todo a todos en alineaciones" ON alineaciones FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "Permitir todo a todos en estadisticas_partido_jugador" ON estadisticas_partido_jugador FOR ALL USING (true) WITH CHECK (true);
+

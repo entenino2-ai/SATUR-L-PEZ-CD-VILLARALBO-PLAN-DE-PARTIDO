@@ -106,13 +106,40 @@ export interface EventoPartido {
   creado_en?: string;
 }
 
+export interface DibujoPizarra {
+  id: string;
+  tipo: 'arrow' | 'pass' | 'press' | 'cone' | 'zone' | 'freehand' | 'text';
+  color: string;
+  puntos: { x: number; y: number }[]; // 0-100 percentage coordinates
+  texto?: string;
+}
+
 export interface AlineacionPartido {
   partido_id: string;
   formacion_local: string;
   formacion_rival: string;
   mostrar_rival: boolean;
-  jugadores_11: Record<string, any>; // { "local-0": "jugador_id", "_customPositions": { ... } }
+  jugadores_11: Record<string, any>; // { "local-0": "jugador_id", "_customPositions": { ... }, "_dibujos": [...] }
   posiciones_custom?: Record<string, { x: number; y: number }>;
+  dibujos?: DibujoPizarra[];
   analisis_ia: string | null;
   creado_en?: string;
 }
+
+export interface EstadisticaJugadorPartido {
+  id?: string;
+  partido_id: string;
+  jugador_id: string;
+  convocado: boolean;
+  titular: boolean;
+  minutos_jugados: number;
+  goles: number;
+  asistencias: number;
+  tarjetas_amarillas: number;
+  tarjetas_rojas: number;
+  valoracion: number; // 1 to 10
+  notas: string;
+  jugador?: Jugador;
+  creado_en?: string;
+}
+
