@@ -1,17 +1,18 @@
 'use client';
 
 import React from 'react';
-import { Edit2, Trash2, Shield, Calendar } from 'lucide-react';
+import { Edit2, Trash2, Shield, Calendar, Users } from 'lucide-react';
 import { Equipo } from '../lib/types';
 
 interface TeamCardProps {
   team: Equipo;
+  playerCount?: number;
   onEdit: (team: Equipo) => void;
   onDelete: (id: string) => void;
   onViewPlayers?: (team: Equipo) => void;
 }
 
-export default function TeamCard({ team, onEdit, onDelete, onViewPlayers }: TeamCardProps) {
+export default function TeamCard({ team, playerCount, onEdit, onDelete, onViewPlayers }: TeamCardProps) {
   // Get initials for team shield fallback
   const getInitials = (name: string) => {
     return name
@@ -83,9 +84,21 @@ export default function TeamCard({ team, onEdit, onDelete, onViewPlayers }: Team
             )}
           </div>
           
-          <div className="mt-1 flex items-center gap-1.5 text-xs text-muted-text font-semibold">
-            <Calendar className="h-3.5 w-3.5" />
-            <span>Creado: {formatCreationDate(team.creado_en)}</span>
+          <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-muted-text font-semibold">
+            {typeof playerCount === 'number' && (
+              <span className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-bold ${
+                playerCount > 0
+                  ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20'
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-500'
+              }`}>
+                <Users className="h-3 w-3" />
+                {playerCount} {playerCount === 1 ? 'jugador' : 'jugadores'}
+              </span>
+            )}
+            <div className="flex items-center gap-1">
+              <Calendar className="h-3.5 w-3.5" />
+              <span>{formatCreationDate(team.creado_en)}</span>
+            </div>
           </div>
         </div>
       </div>

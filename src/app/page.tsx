@@ -79,6 +79,7 @@ export default function DashboardPage() {
   // Data States
   const [players, setPlayers] = useState<Jugador[]>([]);
   const [teams, setTeams] = useState<Equipo[]>([]);
+  const [teamPlayerCounts, setTeamPlayerCounts] = useState<Record<string, number>>({});
   const [selectedPartido, setSelectedPartido] = useState<Partido | null>(null);
   const [loading, setLoading] = useState(true);
   
@@ -171,6 +172,25 @@ export default function DashboardPage() {
 
       if (error) throw error;
       setTeams((data || []) as Equipo[]);
+
+      // Also fetch counts of players per team
+      try {
+        const { data: rivalPlayers } = await supabase
+          .from('jugadores_equipo')
+          .select('equipo_id');
+
+        if (rivalPlayers) {
+          const counts: Record<string, number> = {};
+          for (const rp of rivalPlayers) {
+            if (rp.equipo_id) {
+              counts[rp.equipo_id] = (counts[rp.equipo_id] || 0) + 1;
+            }
+          }
+          setTeamPlayerCounts(counts);
+        }
+      } catch (countErr) {
+        console.warn('Could not fetch player counts:', countErr);
+      }
     } catch (err: any) {
       console.error('Error fetching teams:', err);
       showToast('Error al cargar los equipos: ' + err.message, 'error');
@@ -593,6 +613,7 @@ export default function DashboardPage() {
                     <TeamCard
                       key={team.id}
                       team={team}
+                      playerCount={team.nombre.toLowerCase().includes('villaralbo') ? players.length : (teamPlayerCounts[team.id] ?? 0)}
                       onEdit={(t) => {
                         setSelectedTeam(t);
                         setIsTeamModalOpen(true);
